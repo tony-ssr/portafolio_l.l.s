@@ -10,35 +10,35 @@
   <!-- Favicon Chococat -->
   <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
   
-  <!-- Stylesheets -->
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
 
   <!-- ======================================================================
-       Sticky Kawaii Glassmorphism Navbar
+       Floating Island Navbar (Apple Glassmorphism)
        ====================================================================== -->
-  <header class="navbar" id="navbar">
-    <div class="container navbar__inner">
+  <div class="navbar-wrapper">
+    <header class="navbar" id="navbar">
       <a href="#about" class="navbar__brand" aria-label="Go to top">
-        <div class="navbar__logo-wrapper">
-          <img src="assets/images/chococat-head.svg" alt="Chococat Logo" class="navbar__logo-icon">
+        <div class="navbar__avatar">
+          <img src="assets/images/chococat-head.svg" alt="Chococat Logo">
         </div>
-        <div class="navbar__brand-text">
-          <span class="navbar__brand-name">María Alejandra</span>
-          <span class="navbar__brand-tag">Portfolio L.L.S ✨</span>
+        <div class="navbar__brand-info">
+          <span class="navbar__name">María Alejandra</span>
+          <span class="navbar__role">Portfolio L.L.S ✨</span>
         </div>
       </a>
 
       <!-- Desktop Navigation Menu -->
-      <nav class="navbar__nav" id="navbar-menu" aria-label="Main Navigation">
-        <a href="#about" class="navbar__link active">🐾 About</a>
-        <a href="#infographic" class="navbar__link">🎨 Infographic</a>
-        <a href="#sill" class="navbar__link">📊 S.I.L.L.</a>
-        <a href="#metacognitive-video" class="navbar__link">🎬 LLS Video</a>
-        <a href="#zimmerman" class="navbar__link">🎵 Zimmerman</a>
-        <a href="#podcast" class="navbar__link">🎙️ Podcast</a>
-        <a href="#lesson-plan" class="navbar__link">📝 Lesson Plan</a>
+      <nav class="navbar__menu" id="navbar-menu" aria-label="Main Navigation">
+        <a href="#about" class="navbar__item active">🐾 About</a>
+        <a href="#infographic" class="navbar__item">🎨 Infographic</a>
+        <a href="#sill" class="navbar__item">📊 S.I.L.L.</a>
+        <a href="#metacognitive-video" class="navbar__item">🎬 LLS Video</a>
+        <a href="#zimmerman" class="navbar__item">🎵 Zimmerman</a>
+        <a href="#podcast" class="navbar__item">🎙️ Podcast</a>
+        <a href="#lesson-plan" class="navbar__item">📝 Lesson Plan</a>
       </nav>
 
       <!-- Mobile Hamburger Toggle -->
@@ -49,130 +49,134 @@
           <span class="navbar__toggle-line"></span>
         </span>
       </button>
-    </div>
-  </header>
+    </header>
+  </div>
 
   <main>
     <!-- ====================================================================
-         Hero Section & About Me
+         Hero & About Me Bento Grid
          ==================================================================== -->
-    <header class="hero" id="about">
-      <div class="container hero__inner">
-        <!-- Real Chococat Floating Sticker with Dialogue Bubble -->
-        <div class="hero__cat-speech" aria-hidden="true">Hi! Welcome to my Portfolio! 🐾</div>
-        <img src="assets/images/chococat-ranking-2026-clean.png" alt="Chococat Sanrio Character" class="hero__cat-sticker-float" title="Chococat waving hello!">
-
-        <div class="hero__badge-track">
-          <span class="hero__badge-star">★</span>
-          <span>Language Learning Strategies &bull; 7th Semester</span>
-        </div>
-
-        <!-- Profile Photo with Chococat Interactive Badge -->
-        <div class="hero__avatar-wrapper">
-          <div class="hero__avatar-ring">
-            <img src="assets/images/maria-alejandra-profile.jpg" alt="Photograph of María Alejandra Acosta" class="hero__avatar-img">
-          </div>
-          <img src="assets/images/chococat-badge.svg" alt="Chococat Companion Badge" class="hero__avatar-chococat-badge" title="Chococat Academic Companion">
-        </div>
-
-        <h1 class="hero__title">María Alejandra Acosta</h1>
-        <p class="hero__subtitle">Portfolio L.L.S <span>🐾</span></p>
-
-        <div class="hero__meta">
-          <span class="hero__meta-pill">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-            21 years old
-          </span>
-          <span class="hero__meta-pill">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
-            Bachelor's Degree in Spanish and English Teaching
-          </span>
-          <span class="hero__meta-pill">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-            Universidad de Nariño
-          </span>
-        </div>
-
-        <div class="hero__divider"></div>
-
-        <!-- About Me Card (100% Exact Text) -->
-        <section class="hero__statement-card content-block" aria-labelledby="about-me-title">
-          <div class="hero__statement-header">
-            <div class="hero__statement-title-wrap">
-              <span class="hero__statement-icon">🐾</span>
-              <h2 id="about-me-title" class="hero__statement-label">About me</h2>
+    <section class="hero" id="about">
+      <div class="container">
+        <div class="hero__bento">
+          
+          <!-- Left Profile Bento Card -->
+          <article class="hero__profile-card">
+            <div class="hero__status-badge">
+              <span class="hero__status-dot"></span>
+              <span>Active Student &bull; 7th Semester</span>
             </div>
-            <span class="hero__statement-badge">Personal Journey &amp; Teaching Philosophy</span>
-          </div>
-          <p class="hero__statement-text">My name is María Alejandra Acosta. I am 21 years old and currently in my seventh semester of the Bachelor's Degree in Spanish and English Teaching. My passion for becoming an educator comes from a very personal place: I want to transform the way languages are experienced in the classroom. Looking back at my own journey, I often felt the limitations of rigid, traditional methods, and that is why my purpose as a future teacher is to ensure my students have far better, warmer, and more inspiring experiences learning Spanish and English than the ones I had. I want to build a space where they feel truly supported, confident, and excited to discover their own voices through language.</p>
-        </section>
+
+            <div class="hero__avatar-container">
+              <div class="hero__avatar-ring">
+                <img src="assets/images/maria-alejandra-profile.jpg" alt="Photograph of María Alejandra Acosta" class="hero__avatar-img">
+              </div>
+              <img src="assets/images/chococat-badge.svg" alt="Chococat Badge" class="hero__avatar-badge" title="Chococat Academic Companion">
+            </div>
+
+            <h1 class="hero__name">María Alejandra Acosta</h1>
+            <p class="hero__title-sub">Portfolio L.L.S 🐾</p>
+
+            <div class="hero__meta-list">
+              <div class="hero__meta-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4299E1" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                <span>21 years old</span>
+              </div>
+              <div class="hero__meta-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4299E1" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+                <span>Spanish &amp; English Teaching</span>
+              </div>
+              <div class="hero__meta-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4299E1" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                <span>Universidad de Nariño</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Right Journal Bento Card (About Me - 100% Exact Text) -->
+          <article class="hero__journal-card">
+            <!-- Real Chococat Floating Companion Sticker -->
+            <img src="assets/images/chococat-ranking-2026-clean.png" alt="Chococat Sticker" class="hero__cat-companion" title="Chococat Companion">
+
+            <div class="hero__journal-header">
+              <div class="hero__journal-title-wrap">
+                <div class="hero__journal-icon">🐾</div>
+                <h2 class="hero__journal-title">About me</h2>
+              </div>
+              <span class="hero__journal-tag">Personal Journey &amp; Teaching Philosophy</span>
+            </div>
+
+            <p class="hero__journal-body">My name is María Alejandra Acosta. I am 21 years old and currently in my seventh semester of the Bachelor's Degree in Spanish and English Teaching. My passion for becoming an educator comes from a very personal place: I want to transform the way languages are experienced in the classroom. Looking back at my own journey, I often felt the limitations of rigid, traditional methods, and that is why my purpose as a future teacher is to ensure my students have far better, warmer, and more inspiring experiences learning Spanish and English than the ones I had. I want to build a space where they feel truly supported, confident, and excited to discover their own voices through language.</p>
+          </article>
+
+        </div>
       </div>
-    </header>
+    </section>
 
     <!-- ====================================================================
          Section 1: Infographic
          ==================================================================== -->
-    <section class="section" id="infographic" aria-labelledby="infographic-title">
+    <section class="section" id="infographic" aria-labelledby="infographic-heading">
       <div class="container">
         <div class="section__header">
-          <span class="section__badge-pill">🎨 Module 01 &bull; Visual Synthesis</span>
-          <h2 id="infographic-title" class="section__title">Infographic</h2>
-          <p class="section__desc">Rebecca Oxford’s Language Learning Strategies: Memory, Cognitive, and Social taxonomies.</p>
+          <span class="section__pill">🎨 Module 01 &bull; Visual Synthesis</span>
+          <h2 id="infographic-heading" class="section__title">infographic</h2>
+          <p class="section__desc">Rebecca Oxford’s Language Learning Strategies: Memory, Cognitive, and Social Taxonomies.</p>
         </div>
 
         <!-- Media Showcase Card -->
-        <div class="media-card content-block">
-          <div class="media-card__preview-wrapper" data-lightbox-index="0" role="button" tabindex="0" aria-label="Open infographic in full screen image viewer">
-            <img src="assets/images/infografia-oxford-lls.jpg" alt="Infographic of Rebecca Oxford's Language Learning Strategies" class="media-card__img">
-            <div class="media-card__overlay">
-              <span class="media-card__action-pill">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+        <div class="showcase-card content-block">
+          <div class="showcase-card__image-box" data-lightbox-index="0" role="button" tabindex="0" aria-label="Open infographic in full view">
+            <img src="assets/images/infografia-oxford-lls.jpg" alt="Rebecca Oxford Language Learning Strategies Infographic" class="showcase-card__img">
+            <div class="showcase-card__overlay">
+              <span class="showcase-card__zoom-btn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
                 View High-Resolution Infographic
               </span>
             </div>
           </div>
-          <div class="media-card__footer">
+          <div class="showcase-card__footer">
             <span>Visual synthesis poster: Rebecca Oxford's LLS classification</span>
-            <span class="media-card__tag">
+            <span class="showcase-card__badge">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
               High Definition
             </span>
           </div>
         </div>
 
-        <!-- Reflective Analysis Blocks (100% Exact Text) -->
-        <div class="reflection-grid content-block">
-          <article class="reflection-item">
-            <div class="reflection-item__header">
-              <span class="reflection-item__icon-bubble">🌟</span>
-              <h3 class="reflection-item__title">Strengths &amp; Visual Synthesis</h3>
+        <!-- Reflective Stack (100% Exact Text) -->
+        <div class="reflection-stack content-block">
+          <article class="reflection-card">
+            <div class="reflection-card__header">
+              <span class="reflection-card__icon-bubble">🌟</span>
+              <h3 class="reflection-card__title">Strengths &amp; Visual Synthesis</h3>
             </div>
-            <p class="reflection-item__text">Creating this infographic on Rebecca Oxford’s Language Learning Strategies was our first activity in the course, and it helped me connect theoretical concepts with visual organization. Looking at what we did well, I think the overall structure and synthesis of the content worked nicely. my group and I divided the poster into three clear categories (Memory, Cognitive, and Social strategies) and used short bullet points, concrete classroom examples like pair work and clarification questions, and visual aids such as comic strips and small drawings. Organizing the information this way made the theory more approachable and easier to follow rather than overwhelming.</p>
+            <p class="reflection-card__text">Creating this infographic on Rebecca Oxford’s Language Learning Strategies was our first activity in the course, and it helped me connect theoretical concepts with visual organization. Looking at what we did well, I think the overall structure and synthesis of the content worked nicely. my group and I divided the poster into three clear categories (Memory, Cognitive, and Social strategies) and used short bullet points, concrete classroom examples like pair work and clarification questions, and visual aids such as comic strips and small drawings. Organizing the information this way made the theory more approachable and easier to follow rather than overwhelming.</p>
           </article>
 
-          <article class="reflection-item reflection-item--warning">
-            <div class="reflection-item__header">
-              <span class="reflection-item__icon-bubble">🐾</span>
-              <h3 class="reflection-item__title">Challenges &amp; Presentation Delivery</h3>
+          <article class="reflection-card reflection-card--warning">
+            <div class="reflection-card__header">
+              <span class="reflection-card__icon-bubble">🐾</span>
+              <h3 class="reflection-card__title">Challenges &amp; Presentation Delivery</h3>
             </div>
-            <p class="reflection-item__text">However, looking back at how we presented the topic, there are areas that did not go as well. In particular, my group and I did not distribute our speaking time equally, so some classmates ended up talking much more than others during the presentation. Because the turns were unbalanced, we rushed through parts of the explanation and did not have enough space to discuss how teachers can actually model these strategies for students who struggle with speaking anxiety. Relying a bit too much on listing the subcategories instead of analyzing their practical impact in class also made our delivery feel uneven.</p>
+            <p class="reflection-card__text">However, looking back at how we presented the topic, there are areas that did not go as well. In particular, my group and I did not distribute our speaking time equally, so some classmates ended up talking much more than others during the presentation. Because the turns were unbalanced, we rushed through parts of the explanation and did not have enough space to discuss how teachers can actually model these strategies for students who struggle with speaking anxiety. Relying a bit too much on listing the subcategories instead of analyzing their practical impact in class also made our delivery feel uneven.</p>
           </article>
 
-          <article class="reflection-item reflection-item--success">
-            <div class="reflection-item__header">
-              <span class="reflection-item__icon-bubble">🚀</span>
-              <h3 class="reflection-item__title">Action Plan for Future Teaching Tasks</h3>
+          <article class="reflection-card reflection-card--success">
+            <div class="reflection-card__header">
+              <span class="reflection-card__icon-bubble">🚀</span>
+              <h3 class="reflection-card__title">Action Plan for Future Teaching Tasks</h3>
             </div>
-            <p class="reflection-item__text">To improve in future presentations and teaching tasks, I would organize the time distribution with my group beforehand and assign balanced sections so every member has an equal opportunity to participate. Doing a brief rehearsal together would also help us control our pacing and ensure that each strategy is explained with clear, relatable classroom examples rather than just definitions. Applying cooperative and self-monitoring strategies to our own teamwork will help us communicate course concepts more effectively next time.</p>
+            <p class="reflection-card__text">To improve in future presentations and teaching tasks, I would organize the time distribution with my group beforehand and assign balanced sections so every member has an equal opportunity to participate. Doing a brief rehearsal together would also help us control our pacing and ensure that each strategy is explained with clear, relatable classroom examples rather than just definitions. Applying cooperative and self-monitoring strategies to our own teamwork will help us communicate course concepts more effectively next time.</p>
           </article>
         </div>
 
-        <!-- Cute Chococat Animated GIF Banner -->
-        <div class="section__chococat-banner">
-          <img src="assets/images/chococat-curious.gif" alt="Chococat Curious Animation" class="section__chococat-banner-gif">
+        <!-- Cute Chococat Animated GIF Dialogue Banner -->
+        <div class="chococat-dialogue-banner">
+          <img src="assets/images/chococat-curious.gif" alt="Chococat Curious" class="chococat-dialogue-banner__gif">
           <div>
-            <span class="section__chococat-banner-badge">Visual Strategy Explorer</span>
-            <span class="section__chococat-banner-text">Connecting theory with visual clarity &bull; Rebecca Oxford Model</span>
+            <span class="chococat-dialogue-banner__badge">Curious Exploration</span>
+            <span class="chococat-dialogue-banner__text">Visualizing Memory, Cognitive &amp; Social Strategies</span>
           </div>
         </div>
       </div>
@@ -181,47 +185,47 @@
     <!-- ====================================================================
          Section 2: S.I.L.L.
          ==================================================================== -->
-    <section class="section section--alt" id="sill" aria-labelledby="sill-title">
+    <section class="section section--alt" id="sill" aria-labelledby="sill-heading">
       <div class="container">
         <div class="section__header">
-          <span class="section__badge-pill">📊 Module 02 &bull; Diagnostic Assessment</span>
-          <h2 id="sill-title" class="section__title">S.I.L.L.</h2>
-          <p class="section__desc">Strategy Inventory for Language Learning (SILL) &amp; LLS Individual Learner Profile.</p>
+          <span class="section__pill">📊 Module 02 &bull; Diagnostic Assessment</span>
+          <h2 id="sill-heading" class="section__title">S.I.L.L.</h2>
+          <p class="section__desc">Strategy Inventory for Language Learning (SILL) &amp; Individual Profile Report.</p>
         </div>
 
-        <!-- Image Showcase Card (Results Graph) -->
-        <div class="media-card content-block">
-          <div class="media-card__preview-wrapper" data-lightbox-index="1" role="button" tabindex="0" aria-label="Open SILL graph in image viewer">
-            <img src="assets/images/sill-profile-graph.jpg" alt="Visual graph and strategic averages from SILL inventory" class="media-card__img">
-            <div class="media-card__overlay">
-              <span class="media-card__action-pill">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+        <!-- Image Showcase Card (SILL Graph) -->
+        <div class="showcase-card content-block">
+          <div class="showcase-card__image-box" data-lightbox-index="1" role="button" tabindex="0" aria-label="Open SILL graph in full view">
+            <img src="assets/images/sill-profile-graph.jpg" alt="Strategy Inventory for Language Learning Results Chart" class="showcase-card__img">
+            <div class="showcase-card__overlay">
+              <span class="showcase-card__zoom-btn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
                 View SILL Profile Graph
               </span>
             </div>
           </div>
-          <div class="media-card__footer">
+          <div class="showcase-card__footer">
             <span>Diagnostic Breakdown: Memory, Cognitive, Compensation, Metacognitive, Affective, Social</span>
-            <span class="media-card__tag">
+            <span class="showcase-card__badge">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
               Assessment Data
             </span>
           </div>
         </div>
 
-        <!-- Document Card (SILL PDF) with Action Buttons -->
-        <div class="doc-card content-block">
-          <div class="doc-card__header">
-            <div class="doc-card__icon-box">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+        <!-- Document Vault Card (SILL PDF) with Action Buttons -->
+        <div class="vault-card content-block">
+          <div class="vault-card__top">
+            <div class="vault-card__icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
             </div>
-            <div class="doc-card__info">
-              <h3 class="doc-card__title">My LLS Profile - SILL Results</h3>
-              <p class="doc-card__meta">Official Academic Report &bull; Comprehensive Strategy Inventory &bull; PDF Document (3 Pages)</p>
+            <div class="vault-card__info">
+              <h3 class="vault-card__title">My LLS Profile - SILL Results</h3>
+              <p class="vault-card__meta">Official Academic Report &bull; Comprehensive Strategy Inventory &bull; PDF Document (3 Pages)</p>
             </div>
           </div>
 
-          <div class="doc-card__actions">
+          <div class="vault-card__actions">
             <button class="btn btn--primary" data-doc-view="assets/documents/My-LLS-Profile-SILL-Results.pdf" data-doc-title="My LLS Profile - SILL Results">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
               Open &amp; View
@@ -230,49 +234,49 @@
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
               Download PDF
             </a>
-            <button class="btn btn--outline" data-quick-preview-target="sill-embed-preview">
+            <button class="btn btn--outline" data-quick-preview-target="sill-quick-embed">
               👁 Quick Preview
             </button>
           </div>
 
-          <div id="sill-embed-preview" class="doc-card__embed-wrapper">
-            <iframe class="doc-card__iframe" src="assets/documents/My-LLS-Profile-SILL-Results.pdf" title="SILL Profile Embedded Preview"></iframe>
+          <div id="sill-quick-embed" class="vault-card__preview-embed">
+            <iframe class="vault-card__iframe" src="assets/documents/My-LLS-Profile-SILL-Results.pdf" title="SILL Profile Preview"></iframe>
           </div>
         </div>
 
-        <!-- Reflective Analysis Blocks (100% Exact Text) -->
-        <div class="reflection-grid content-block">
-          <article class="reflection-item">
-            <div class="reflection-item__header">
-              <span class="reflection-item__icon-bubble">🌟</span>
-              <h3 class="reflection-item__title">Learner Self-Awareness &amp; Socio-Affective Strengths</h3>
+        <!-- Reflective Stack (100% Exact Text) -->
+        <div class="reflection-stack content-block">
+          <article class="reflection-card">
+            <div class="reflection-card__header">
+              <span class="reflection-card__icon-bubble">🌟</span>
+              <h3 class="reflection-card__title">Learner Self-Awareness &amp; Socio-Affective Strengths</h3>
             </div>
-            <p class="reflection-item__text">Completing the Strategy Inventory for Language Learning (SILL) and building my LLS profile allowed me to examine my own habits as an English learner with greater self-awareness. Regarding what I did well, I was able to interpret my results honestly and connect them to real classroom situations rather than simply repeating numbers. Recognizing that my strongest areas are managing emotions and learning with others helped me to understand why I naturally lean toward socio-affective strategies, such as calming my anxiety before speaking, accepting errors as part of learning, and rehearsing ideas with peers. I also translated my lowest score, remembering more effectively, into a concrete and realistic development goal by designing a weekly vocabulary log with original sentences and short active-recall reviews.</p>
+            <p class="reflection-card__text">Completing the Strategy Inventory for Language Learning (SILL) and building my LLS profile allowed me to examine my own habits as an English learner with greater self-awareness. Regarding what I did well, I was able to interpret my results honestly and connect them to real classroom situations rather than simply repeating numbers. Recognizing that my strongest areas are managing emotions and learning with others helped me to understand why I naturally lean toward socio-affective strategies, such as calming my anxiety before speaking, accepting errors as part of learning, and rehearsing ideas with peers. I also translated my lowest score, remembering more effectively, into a concrete and realistic development goal by designing a weekly vocabulary log with original sentences and short active-recall reviews.</p>
           </article>
 
-          <article class="reflection-item reflection-item--warning">
-            <div class="reflection-item__header">
-              <span class="reflection-item__icon-bubble">🐾</span>
-              <h3 class="reflection-item__title">Memory Routine &amp; Analysis Vulnerabilities</h3>
+          <article class="reflection-card reflection-card--warning">
+            <div class="reflection-card__header">
+              <span class="reflection-card__icon-bubble">🐾</span>
+              <h3 class="reflection-card__title">Memory Routine &amp; Analysis Vulnerabilities</h3>
             </div>
-            <p class="reflection-item__text">However, this activity also revealed areas where both my learning habits and my written analysis were not as strong. In my daily study routine, I have relied too much on acquiring new words passively through reading or listening without reviewing them systematically afterward, which explains my low score in memory strategies and my moderate average in compensating for missing knowledge.</p>
+            <p class="reflection-card__text">However, this activity also revealed areas where both my learning habits and my written analysis were not as strong. In my daily study routine, I have relied too much on acquiring new words passively through reading or listening without reviewing them systematically afterward, which explains my low score in memory strategies and my moderate average in compensating for missing knowledge.</p>
           </article>
 
-          <article class="reflection-item reflection-item--success">
-            <div class="reflection-item__header">
-              <span class="reflection-item__icon-bubble">🚀</span>
-              <h3 class="reflection-item__title">Holistic Growth &amp; Action Plan</h3>
+          <article class="reflection-card reflection-card--success">
+            <div class="reflection-card__header">
+              <span class="reflection-card__icon-bubble">🚀</span>
+              <h3 class="reflection-card__title">Holistic Growth &amp; Action Plan</h3>
             </div>
-            <p class="reflection-item__text">To improve moving forward, I want to balance my socio-affective strengths with more intentional memory and metacognitive strategies. Putting my action plan into practice by reviewing eight to ten new words each week and actively using them in class discussions will help me retain vocabulary more effectively. At the same time, paying closer attention to how all six strategy groups work together, and carefully proofreading my written reflections will help me become both a more autonomous learner and a more reflective future language teacher.</p>
+            <p class="reflection-card__text">To improve moving forward, I want to balance my socio-affective strengths with more intentional memory and metacognitive strategies. Putting my action plan into practice by reviewing eight to ten new words each week and actively using them in class discussions will help me retain vocabulary more effectively. At the same time, paying closer attention to how all six strategy groups work together, and carefully proofreading my written reflections will help me become both a more autonomous learner and a more reflective future language teacher.</p>
           </article>
         </div>
 
-        <!-- Cute Chococat Animated GIF Banner -->
-        <div class="section__chococat-banner">
-          <img src="assets/images/chococat-dancing.gif" alt="Chococat Dancing Animation" class="section__chococat-banner-gif">
+        <!-- Cute Chococat Animated GIF Dialogue Banner -->
+        <div class="chococat-dialogue-banner">
+          <img src="assets/images/chococat-dancing.gif" alt="Chococat Dancing" class="chococat-dialogue-banner__gif">
           <div>
-            <span class="section__chococat-banner-badge">Self-Awareness Milestone</span>
-            <span class="section__chococat-banner-text">Celebrating socio-affective strengths and intentional development</span>
+            <span class="chococat-dialogue-banner__badge">Diagnostic Self-Awareness</span>
+            <span class="chococat-dialogue-banner__text">Balancing emotional regulation with intentional memory habits</span>
           </div>
         </div>
       </div>
@@ -281,17 +285,17 @@
     <!-- ====================================================================
          Section 3: Video sobre L.L.S (Metacognitive Strategy)
          ==================================================================== -->
-    <section class="section" id="metacognitive-video" aria-labelledby="video-title">
+    <section class="section" id="metacognitive-video" aria-labelledby="video-heading">
       <div class="container">
         <div class="section__header">
-          <span class="section__badge-pill">🎬 Module 03 &bull; Autonomous Learning</span>
-          <h2 id="video-title" class="section__title">Video sobre L.L.S (metacognive strategy)</h2>
+          <span class="section__pill">🎬 Module 03 &bull; Autonomous Learning</span>
+          <h2 id="video-heading" class="section__title">Video sobre L.L.S (metacognive strategy)</h2>
           <p class="section__desc">Dynamic theoretical examination of metacognitive self-regulation in language acquisition.</p>
         </div>
 
-        <!-- YouTube Video Card -->
-        <div class="video-card content-block">
-          <div class="video-card__player-box">
+        <!-- YouTube Player Card -->
+        <div class="player-card content-block">
+          <div class="player-card__video-box">
             <iframe 
               src="https://www.youtube.com/embed/eWABlpCGS30" 
               title="Video sobre L.L.S - Metacognitive Strategy" 
@@ -299,8 +303,8 @@
               allowfullscreen>
             </iframe>
           </div>
-          <div class="video-card__footer">
-            <span class="video-card__footer-title">Academic Video: Metacognitive Strategies &amp; Oxford’s 2017 Framework</span>
+          <div class="player-card__footer">
+            <span class="player-card__title">Academic Video: Metacognitive Strategies &amp; Oxford’s 2017 Framework</span>
             <a href="https://youtu.be/eWABlpCGS30?si=Zzqsur-CzvTIGIzG" target="_blank" rel="noopener noreferrer" class="btn btn--secondary">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
               Watch on YouTube
@@ -308,39 +312,39 @@
           </div>
         </div>
 
-        <!-- Reflective Analysis Blocks (100% Exact Text) -->
-        <div class="reflection-grid content-block">
-          <article class="reflection-item">
-            <div class="reflection-item__header">
-              <span class="reflection-item__icon-bubble">🌟</span>
-              <h3 class="reflection-item__title">Theoretical Depth &amp; Conversational Style</h3>
+        <!-- Reflective Stack (100% Exact Text) -->
+        <div class="reflection-stack content-block">
+          <article class="reflection-card">
+            <div class="reflection-card__header">
+              <span class="reflection-card__icon-bubble">🌟</span>
+              <h3 class="reflection-card__title">Theoretical Depth &amp; Conversational Style</h3>
             </div>
-            <p class="reflection-item__text">Making this video on metacognitive strategies helped me see how learners take charge of their own progress. What worked well for my group was presenting solid theory in a dynamic, conversational way. We contrasted Oxford’s early definition of Language Learning Strategies (LLS) with her 2017 view of strategies as dynamic thoughts regulating cognitive, emotional, and social aspects. Explaining indirect metacognitive strategies through relatable examples, linking modal verbs to prior knowledge, setting SMART goals, and practicing honest self-evaluation, made the topic easy to follow.</p>
+            <p class="reflection-card__text">Making this video on metacognitive strategies helped me see how learners take charge of their own progress. What worked well for my group was presenting solid theory in a dynamic, conversational way. We contrasted Oxford’s early definition of Language Learning Strategies (LLS) with her 2017 view of strategies as dynamic thoughts regulating cognitive, emotional, and social aspects. Explaining indirect metacognitive strategies through relatable examples, linking modal verbs to prior knowledge, setting SMART goals, and practicing honest self-evaluation, made the topic easy to follow.</p>
           </article>
 
-          <article class="reflection-item reflection-item--warning">
-            <div class="reflection-item__header">
-              <span class="reflection-item__icon-bubble">🐾</span>
-              <h3 class="reflection-item__title">Pacing Constraints &amp; Teacher Scaffolding</h3>
+          <article class="reflection-card reflection-card--warning">
+            <div class="reflection-card__header">
+              <span class="reflection-card__icon-bubble">🐾</span>
+              <h3 class="reflection-card__title">Pacing Constraints &amp; Teacher Scaffolding</h3>
             </div>
-            <p class="reflection-item__text">However, looking back at the video, there are a couple of aspects we did not handle as well. Because we spent more time on the definitions and the first two strategies, our explanation of self-evaluation near the end felt a bit rushed. In addition, we focused mostly on what independent learners do on their own without discussing how language teachers can explicitly model and scaffold these metacognitive habits during regular classes.</p>
+            <p class="reflection-card__text">However, looking back at the video, there are a couple of aspects we did not handle as well. Because we spent more time on the definitions and the first two strategies, our explanation of self-evaluation near the end felt a bit rushed. In addition, we focused mostly on what independent learners do on their own without discussing how language teachers can explicitly model and scaffold these metacognitive habits during regular classes.</p>
           </article>
 
-          <article class="reflection-item reflection-item--success">
-            <div class="reflection-item__header">
-              <span class="reflection-item__icon-bubble">🚀</span>
-              <h3 class="reflection-item__title">Future Delivery &amp; Pedagogical Connections</h3>
+          <article class="reflection-card reflection-card--success">
+            <div class="reflection-card__header">
+              <span class="reflection-card__icon-bubble">🚀</span>
+              <h3 class="reflection-card__title">Future Delivery &amp; Pedagogical Connections</h3>
             </div>
-            <p class="reflection-item__text">To improve future videos and teaching tasks, I would organize our pacing more evenly so that every strategy receives the same level of detail. Including a brief classroom connection on how teachers guide students to set goals and assess their progress would also strengthen the pedagogical value while keeping our natural, engaging style.</p>
+            <p class="reflection-card__text">To improve future videos and teaching tasks, I would organize our pacing more evenly so that every strategy receives the same level of detail. Including a brief classroom connection on how teachers guide students to set goals and assess their progress would also strengthen the pedagogical value while keeping our natural, engaging style.</p>
           </article>
         </div>
 
-        <!-- Cute Chococat Animated GIF Banner -->
-        <div class="section__chococat-banner">
-          <img src="assets/images/chococat-adventure.gif" alt="Chococat Adventure Animation" class="section__chococat-banner-gif">
+        <!-- Cute Chococat Animated GIF Dialogue Banner -->
+        <div class="chococat-dialogue-banner">
+          <img src="assets/images/chococat-adventure.gif" alt="Chococat Adventure" class="chococat-dialogue-banner__gif">
           <div>
-            <span class="section__chococat-banner-badge">Autonomous Learning Path</span>
-            <span class="section__chococat-banner-text">Taking charge of knowledge regulation with SMART goals &bull; Oxford 2017</span>
+            <span class="chococat-dialogue-banner__badge">Metacognitive Regulation</span>
+            <span class="chococat-dialogue-banner__text">Guiding learners to take charge of their own autonomous progress</span>
           </div>
         </div>
       </div>
@@ -349,67 +353,67 @@
     <!-- ====================================================================
          Section 4: Zimmerman Model
          ==================================================================== -->
-    <section class="section section--alt" id="zimmerman" aria-labelledby="zimmerman-title">
+    <section class="section section--alt" id="zimmerman" aria-labelledby="zimmerman-heading">
       <div class="container">
         <div class="section__header">
-          <span class="section__badge-pill">🎵 Module 04 &bull; Self-Regulated Learning</span>
-          <h2 id="zimmerman-title" class="section__title">zimmerman model</h2>
+          <span class="section__pill">🎵 Module 04 &bull; Self-Regulated Learning</span>
+          <h2 id="zimmerman-heading" class="section__title">zimmerman model</h2>
           <p class="section__desc">Forethought, Performance, and Self-Reflection applied to authentic speaking activities.</p>
         </div>
 
         <!-- Media Showcase Card -->
-        <div class="media-card content-block">
-          <div class="media-card__preview-wrapper" data-lightbox-index="2" role="button" tabindex="0" aria-label="Open Zimmerman model notes in full image viewer">
-            <img src="assets/images/zimmerman-model-reflection.jpg" alt="Zimmerman self-regulated learning model questions and answers" class="media-card__img">
-            <div class="media-card__overlay">
-              <span class="media-card__action-pill">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+        <div class="showcase-card content-block">
+          <div class="showcase-card__image-box" data-lightbox-index="2" role="button" tabindex="0" aria-label="Open Zimmerman model reflection in full view">
+            <img src="assets/images/zimmerman-model-reflection.jpg" alt="Zimmerman self-regulated learning model questions sheet" class="showcase-card__img">
+            <div class="showcase-card__overlay">
+              <span class="showcase-card__zoom-btn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
                 View Full Guided Questions Sheet
               </span>
             </div>
           </div>
-          <div class="media-card__footer">
+          <div class="showcase-card__footer">
             <span>Guiding reflection sheet based on "Wake Me Up When September Ends"</span>
-            <span class="media-card__tag">
+            <span class="showcase-card__badge">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>
               Speaking Analysis
             </span>
           </div>
         </div>
 
-        <!-- Reflective Analysis Blocks (100% Exact Text) -->
-        <div class="reflection-grid content-block">
-          <article class="reflection-item">
-            <div class="reflection-item__header">
-              <span class="reflection-item__icon-bubble">🌟</span>
-              <h3 class="reflection-item__title">Forethought Stage &amp; Psychological Preparation</h3>
+        <!-- Reflective Stack (100% Exact Text) -->
+        <div class="reflection-stack content-block">
+          <article class="reflection-card">
+            <div class="reflection-card__header">
+              <span class="reflection-card__icon-bubble">🌟</span>
+              <h3 class="reflection-card__title">Forethought Stage &amp; Psychological Preparation</h3>
             </div>
-            <p class="reflection-item__text">Working through the guiding questions based on Zimmerman’s Self-Regulated Learning model after listening to "Wake Me Up When September Ends" helped me notice how I actually use Language Learning Strategies while speaking. One thing I think I did well was taking a moment to prepare my mind during the Forethought stage before talking. Setting a clear goal for what I wanted to share about the song and choosing strategies ahead of time, like calming my nerves and connecting the lyrics to vocabulary I already knew, helped me start the conversation feeling much more grounded.</p>
+            <p class="reflection-card__text">Working through the guiding questions based on Zimmerman’s Self-Regulated Learning model after listening to "Wake Me Up When September Ends" helped me notice how I actually use Language Learning Strategies while speaking. One thing I think I did well was taking a moment to prepare my mind during the Forethought stage before talking. Setting a clear goal for what I wanted to share about the song and choosing strategies ahead of time, like calming my nerves and connecting the lyrics to vocabulary I already knew, helped me start the conversation feeling much more grounded.</p>
           </article>
 
-          <article class="reflection-item reflection-item--warning">
-            <div class="reflection-item__header">
-              <span class="reflection-item__icon-bubble">🐾</span>
-              <h3 class="reflection-item__title">Performance Stage &amp; Real-Time Monitoring</h3>
+          <article class="reflection-card reflection-card--warning">
+            <div class="reflection-card__header">
+              <span class="reflection-card__icon-bubble">🐾</span>
+              <h3 class="reflection-card__title">Performance Stage &amp; Real-Time Monitoring</h3>
             </div>
-            <p class="reflection-item__text">However, there were a couple of things I did not handle as effectively. During the Performance stage, it was challenging to monitor my strategy use while simultaneously trying to speak smoothly about the song. At times, I hesitated when searching for the right words to express deeper ideas, and I did not switch to compensation strategies as quickly as I could have.</p>
+            <p class="reflection-card__text">However, there were a couple of things I did not handle as effectively. During the Performance stage, it was challenging to monitor my strategy use while simultaneously trying to speak smoothly about the song. At times, I hesitated when searching for the right words to express deeper ideas, and I did not switch to compensation strategies as quickly as I could have.</p>
           </article>
 
-          <article class="reflection-item reflection-item--success">
-            <div class="reflection-item__header">
-              <span class="reflection-item__icon-bubble">🚀</span>
-              <h3 class="reflection-item__title">Adaptation &amp; Compensation Strategies</h3>
+          <article class="reflection-card reflection-card--success">
+            <div class="reflection-card__header">
+              <span class="reflection-card__icon-bubble">🚀</span>
+              <h3 class="reflection-card__title">Adaptation &amp; Compensation Strategies</h3>
             </div>
-            <p class="reflection-item__text">To improve in future speaking tasks, I want to apply the Adaptation stage by training myself to use paraphrasing or simpler expressions right away whenever I forget a specific word. I also plan to take quick notes immediately after speaking so I can remember concrete moments when I changed or kept a strategy, making my self-evaluation much clearer and more useful for my growth as a future language teacher.</p>
+            <p class="reflection-card__text">To improve in future speaking tasks, I want to apply the Adaptation stage by training myself to use paraphrasing or simpler expressions right away whenever I forget a specific word. I also plan to take quick notes immediately after speaking so I can remember concrete moments when I changed or kept a strategy, making my self-evaluation much clearer and more useful for my growth as a future language teacher.</p>
           </article>
         </div>
 
-        <!-- Cute Chococat Official Sticker Banner -->
-        <div class="section__chococat-banner">
-          <img src="assets/images/chococat-ranking-2024-clean.png" alt="Chococat Reflection Sticker" class="section__chococat-banner-gif">
+        <!-- Cute Chococat Official Sticker Dialogue Banner -->
+        <div class="chococat-dialogue-banner">
+          <img src="assets/images/chococat-ranking-2024-clean.png" alt="Chococat Sticker" class="chococat-dialogue-banner__gif">
           <div>
-            <span class="section__chococat-banner-badge">Zimmerman SRL Cycle</span>
-            <span class="section__chococat-banner-text">Forethought &bull; Performance &bull; Adaptive Fluency</span>
+            <span class="chococat-dialogue-banner__badge">Self-Regulation Cycle</span>
+            <span class="chococat-dialogue-banner__text">Forethought &bull; Performance &bull; Adaptive Fluency</span>
           </div>
         </div>
       </div>
@@ -418,17 +422,17 @@
     <!-- ====================================================================
          Section 5: Podcast
          ==================================================================== -->
-    <section class="section" id="podcast" aria-labelledby="podcast-title">
+    <section class="section" id="podcast" aria-labelledby="podcast-heading">
       <div class="container">
         <div class="section__header">
-          <span class="section__badge-pill">🎙️ Module 05 &bull; Collaborative Dialogue</span>
-          <h2 id="podcast-title" class="section__title">podcast</h2>
+          <span class="section__pill">🎙️ Module 05 &bull; Collaborative Dialogue</span>
+          <h2 id="podcast-heading" class="section__title">podcast</h2>
           <p class="section__desc">Episode 4: "From Theory to Practice" &bull; SRL &amp; Language Learning Strategies in Teaching Decisions.</p>
         </div>
 
-        <!-- YouTube Video Card -->
-        <div class="video-card content-block">
-          <div class="video-card__player-box">
+        <!-- YouTube Player Card -->
+        <div class="player-card content-block">
+          <div class="player-card__video-box">
             <iframe 
               src="https://www.youtube.com/embed/e7HpSL6GKQ8" 
               title="Podcast Episode 4 - From Theory to Practice" 
@@ -436,8 +440,8 @@
               allowfullscreen>
             </iframe>
           </div>
-          <div class="video-card__footer">
-            <span class="video-card__footer-title">Podcast Episode 4: "From Theory to Practice" (SRL &amp; Teaching Decisions)</span>
+          <div class="player-card__footer">
+            <span class="player-card__title">Podcast Episode 4: "From Theory to Practice" (SRL &amp; Teaching Decisions)</span>
             <a href="https://youtu.be/e7HpSL6GKQ8?si=a5-xdVSNgmgXPsgw" target="_blank" rel="noopener noreferrer" class="btn btn--secondary">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
               Watch on YouTube
@@ -445,39 +449,39 @@
           </div>
         </div>
 
-        <!-- Reflective Analysis Blocks (100% Exact Text) -->
-        <div class="reflection-grid content-block">
-          <article class="reflection-item">
-            <div class="reflection-item__header">
-              <span class="reflection-item__icon-bubble">🌟</span>
-              <h3 class="reflection-item__title">Structured Academic Argumentation</h3>
+        <!-- Reflective Stack (100% Exact Text) -->
+        <div class="reflection-stack content-block">
+          <article class="reflection-card">
+            <div class="reflection-card__header">
+              <span class="reflection-card__icon-bubble">🌟</span>
+              <h3 class="reflection-card__title">Structured Academic Argumentation</h3>
             </div>
-            <p class="reflection-item__text">Recording Episode 4 of our podcast, "From Theory to Practice," helped me connect Self-Regulated Learning (SRL) and Language Learning Strategies directly to everyday teaching decisions. What my group and I did really well was organizing the academic content clearly and logically. We explained how teachers can explicitly model strategies, such as using mental imagery or word grouping for vocabulary, guide students through planning, monitoring, and self-reflection, and adapt their support to the local classroom context rather than following generic programs blindly. Laying out the roles of both teachers and learners in a structured way made the theoretical ideas easy to follow.</p>
+            <p class="reflection-card__text">Recording Episode 4 of our podcast, "From Theory to Practice," helped me connect Self-Regulated Learning (SRL) and Language Learning Strategies directly to everyday teaching decisions. What my group and I did really well was organizing the academic content clearly and logically. We explained how teachers can explicitly model strategies, such as using mental imagery or word grouping for vocabulary, guide students through planning, monitoring, and self-reflection, and adapt their support to the local classroom context rather than following generic programs blindly. Laying out the roles of both teachers and learners in a structured way made the theoretical ideas easy to follow.</p>
           </article>
 
-          <article class="reflection-item reflection-item--warning">
-            <div class="reflection-item__header">
-              <span class="reflection-item__icon-bubble">🐾</span>
-              <h3 class="reflection-item__title">Audio Engineering &amp; Dialogue Dynamics</h3>
+          <article class="reflection-card reflection-card--warning">
+            <div class="reflection-card__header">
+              <span class="reflection-card__icon-bubble">🐾</span>
+              <h3 class="reflection-card__title">Audio Engineering &amp; Dialogue Dynamics</h3>
             </div>
-            <p class="reflection-item__text">However, there were a couple of technical and format details we did not handle as well. Because our group had to split into two subgroups of three and record separately, my subgroup’s section ended up having noticeably poor audio quality. In addition, the format felt quite flat since we simply recorded ourselves talking in front of the camera, which made the episode feel more like a plain presentation than a lively podcast conversation.</p>
+            <p class="reflection-card__text">However, there were a couple of technical and format details we did not handle as well. Because our group had to split into two subgroups of three and record separately, my subgroup’s section ended up having noticeably poor audio quality. In addition, the format felt quite flat since we simply recorded ourselves talking in front of the camera, which made the episode feel more like a plain presentation than a lively podcast conversation.</p>
           </article>
 
-          <article class="reflection-item reflection-item--success">
-            <div class="reflection-item__header">
-              <span class="reflection-item__icon-bubble">🚀</span>
-              <h3 class="reflection-item__title">Authentic Conversation &amp; Production Protocol</h3>
+          <article class="reflection-card reflection-card--success">
+            <div class="reflection-card__header">
+              <span class="reflection-card__icon-bubble">🚀</span>
+              <h3 class="reflection-card__title">Authentic Conversation &amp; Production Protocol</h3>
             </div>
-            <p class="reflection-item__text">For future projects, I would plan ahead with my group so we can either record together in a quiet place or test our microphones beforehand to keep the audio clear and consistent. I would also focus on making the discussion feel like a genuine conversation, reacting to each other's points and sharing short classroom scenarios, rather than simply talking straight into the camera.</p>
+            <p class="reflection-card__text">For future projects, I would plan ahead with my group so we can either record together in a quiet place or test our microphones beforehand to keep the audio clear and consistent. I would also focus on making the discussion feel like a genuine conversation, reacting to each other's points and sharing short classroom scenarios, rather than simply talking straight into the camera.</p>
           </article>
         </div>
 
-        <!-- Cute Chococat Animated GIF Banner -->
-        <div class="section__chococat-banner">
-          <img src="assets/images/chococat-cute-waving.gif" alt="Chococat Waving Animation" class="section__chococat-banner-gif">
+        <!-- Cute Chococat Animated GIF Dialogue Banner -->
+        <div class="chococat-dialogue-banner">
+          <img src="assets/images/chococat-cute-waving.gif" alt="Chococat Waving" class="chococat-dialogue-banner__gif">
           <div>
-            <span class="section__chococat-banner-badge">Academic Discussion Episode</span>
-            <span class="section__chococat-banner-text">From Theory to Practice &bull; Connecting SRL to Classroom Decisions</span>
+            <span class="chococat-dialogue-banner__badge">Collaborative Dialogue</span>
+            <span class="chococat-dialogue-banner__text">Connecting Self-Regulated Learning to classroom pedagogy</span>
           </div>
         </div>
       </div>
@@ -486,27 +490,27 @@
     <!-- ====================================================================
          Section 6: Lesson Plan
          ==================================================================== -->
-    <section class="section section--alt" id="lesson-plan" aria-labelledby="lesson-plan-title">
+    <section class="section section--alt" id="lesson-plan" aria-labelledby="lesson-heading">
       <div class="container">
         <div class="section__header">
-          <span class="section__badge-pill">📝 Module 06 &bull; Pedagogical Implementation</span>
-          <h2 id="lesson-plan-title" class="section__title">lesson plan</h2>
+          <span class="section__pill">📝 Module 06 &bull; Pedagogical Implementation</span>
+          <h2 id="lesson-heading" class="section__title">lesson plan</h2>
           <p class="section__desc">Task-Based Language Teaching (TBLT) Design: Meaningful Memories, Past Tense, and Affective Regulation.</p>
         </div>
 
-        <!-- Document Card (Lesson Plan DOCX & PDF) with Action Buttons -->
-        <div class="doc-card content-block">
-          <div class="doc-card__header">
-            <div class="doc-card__icon-box">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+        <!-- Document Vault Card (Lesson Plan DOCX & PDF) with Action Buttons -->
+        <div class="vault-card content-block">
+          <div class="vault-card__top">
+            <div class="vault-card__icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
             </div>
-            <div class="doc-card__info">
-              <h3 class="doc-card__title">Lesson Plan Model for TBLT Class Implementation</h3>
-              <p class="doc-card__meta">Teachers: María Alejandra Acosta, Ángela Tatiana Caicedo, Alexandra Narváez, William Daniel Timaná &bull; Level B1 &bull; 50 Mins</p>
+            <div class="vault-card__info">
+              <h3 class="vault-card__title">Lesson Plan Model for TBLT Class Implementation</h3>
+              <p class="vault-card__meta">Teachers: María Alejandra Acosta, Ángela Tatiana Caicedo, Alexandra Narváez, William Daniel Timaná &bull; Level B1 &bull; 50 Mins</p>
             </div>
           </div>
 
-          <div class="doc-card__actions">
+          <div class="vault-card__actions">
             <button class="btn btn--primary" data-doc-view="assets/documents/Lesson-Plan-LLS.pdf" data-doc-title="Lesson Plan Model for TBLT Class Implementation">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
               Open &amp; View
@@ -519,49 +523,49 @@
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
               Download Word (.docx)
             </a>
-            <button class="btn btn--outline" data-quick-preview-target="lp-embed-preview">
+            <button class="btn btn--outline" data-quick-preview-target="lp-quick-embed">
               👁 Quick Preview
             </button>
           </div>
 
-          <div id="lp-embed-preview" class="doc-card__embed-wrapper">
-            <iframe class="doc-card__iframe" src="assets/documents/Lesson-Plan-LLS.pdf" title="Lesson Plan Embedded Preview"></iframe>
+          <div id="lp-quick-embed" class="vault-card__preview-embed">
+            <iframe class="vault-card__iframe" src="assets/documents/Lesson-Plan-LLS.pdf" title="Lesson Plan Preview"></iframe>
           </div>
         </div>
 
-        <!-- Reflective Analysis Blocks (100% Exact Text) -->
-        <div class="reflection-grid content-block">
-          <article class="reflection-item">
-            <div class="reflection-item__header">
-              <span class="reflection-item__icon-bubble">🌟</span>
-              <h3 class="reflection-item__title">Affective Atmosphere &amp; Memory Circles</h3>
+        <!-- Reflective Stack (100% Exact Text) -->
+        <div class="reflection-stack content-block">
+          <article class="reflection-card">
+            <div class="reflection-card__header">
+              <span class="reflection-card__icon-bubble">🌟</span>
+              <h3 class="reflection-card__title">Affective Atmosphere &amp; Memory Circles</h3>
             </div>
-            <p class="reflection-item__text">What I think my group and I did best was creating a warm, low-stress atmosphere right from the start. Beginning with the "nervous thermometer," a quick breathing reset, and our own imperfect story from the Memory Box helped our classmates relax and see that making mistakes was completely normal. Setting up the "Memory Circles" with rotating role and adding a short mid-task checklist pause also worked nicely because it kept everyone supportive and gave speakers a clear moment to check in with themselves and adjust before the second round.</p>
+            <p class="reflection-card__text">What I think my group and I did best was creating a warm, low-stress atmosphere right from the start. Beginning with the "nervous thermometer," a quick breathing reset, and our own imperfect story from the Memory Box helped our classmates relax and see that making mistakes was completely normal. Setting up the "Memory Circles" with rotating role and adding a short mid-task checklist pause also worked nicely because it kept everyone supportive and gave speakers a clear moment to check in with themselves and adjust before the second round.</p>
           </article>
 
-          <article class="reflection-item reflection-item--warning">
-            <div class="reflection-item__header">
-              <span class="reflection-item__icon-bubble">🐾</span>
-              <h3 class="reflection-item__title">Time Management &amp; Task Density</h3>
+          <article class="reflection-card reflection-card--warning">
+            <div class="reflection-card__header">
+              <span class="reflection-card__icon-bubble">🐾</span>
+              <h3 class="reflection-card__title">Time Management &amp; Task Density</h3>
             </div>
-            <p class="reflection-item__text">At the same time,carrying out so many steps within a single 45 minute session brought a few challenges.Moving from the warm-up and five-keyword planning into two speaking rounds, the self-monitoring pause, and the Padlet activity meant we had to watch the clock constantly, which left the final Self-Reflection stage feeling a bit rushed.</p>
+            <p class="reflection-card__text">At the same time,carrying out so many steps within a single 45 minute session brought a few challenges.Moving from the warm-up and five-keyword planning into two speaking rounds, the self-monitoring pause, and the Padlet activity meant we had to watch the clock constantly, which left the final Self-Reflection stage feeling a bit rushed.</p>
           </article>
 
-          <article class="reflection-item reflection-item--success">
-            <div class="reflection-item__header">
-              <span class="reflection-item__icon-bubble">🚀</span>
-              <h3 class="reflection-item__title">Streamlined Transitions &amp; Emotional Reassurance</h3>
+          <article class="reflection-card reflection-card--success">
+            <div class="reflection-card__header">
+              <span class="reflection-card__icon-bubble">🚀</span>
+              <h3 class="reflection-card__title">Streamlined Transitions &amp; Emotional Reassurance</h3>
             </div>
-            <p class="reflection-item__text">Next time I teach a lesson like this, I would simplify some of the transitions so we can save a few extra minutes at the end for students to write their Padlet reflections and reply to their peers calmly. I would also take a brief moment before the first speaking round to reassure students that pausing or stumbling over a past verb is part of the process, helping them trust their affective strategies and focus on sharing their memory rather than trying to sound perfect.</p>
+            <p class="reflection-card__text">Next time I teach a lesson like this, I would simplify some of the transitions so we can save a few extra minutes at the end for students to write their Padlet reflections and reply to their peers calmly. I would also take a brief moment before the first speaking round to reassure students that pausing or stumbling over a past verb is part of the process, helping them trust their affective strategies and focus on sharing their memory rather than trying to sound perfect.</p>
           </article>
         </div>
 
-        <!-- Cute Chococat Animated GIF Banner -->
-        <div class="section__chococat-banner">
-          <img src="assets/images/chococat-happy.gif" alt="Chococat Happy Celebration" class="section__chococat-banner-gif">
+        <!-- Cute Chococat Animated GIF Dialogue Banner -->
+        <div class="chococat-dialogue-banner">
+          <img src="assets/images/chococat-happy.gif" alt="Chococat Happy" class="chococat-dialogue-banner__gif">
           <div>
-            <span class="section__chococat-banner-badge">Joyful Pedagogy</span>
-            <span class="section__chococat-banner-text">Building a warm, supportive and inspiring classroom environment</span>
+            <span class="chococat-dialogue-banner__badge">Empowering Pedagogy</span>
+            <span class="chococat-dialogue-banner__text">Designing supportive language experiences where students thrive</span>
           </div>
         </div>
       </div>
@@ -569,7 +573,7 @@
   </main>
 
   <!-- ======================================================================
-       Academic Footer with Chococat Theme
+       Academic Footer
        ====================================================================== -->
   <footer class="footer">
     <div class="container footer__inner">
@@ -585,7 +589,6 @@
 
   <!-- ======================================================================
        Lightbox Modal (RULE 4 COMPLIANT)
-       Controls strictly float INSIDE the image container
        ====================================================================== -->
   <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image Lightbox Viewer">
     <div class="lightbox__stage">
@@ -604,7 +607,7 @@
     <div class="doc-modal__container">
       <div class="doc-modal__header">
         <div class="doc-modal__title-group">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4DA3D9" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4299E1" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
           <h3 class="doc-modal__title" id="doc-modal-title">Document Viewer</h3>
         </div>
         <div class="doc-modal__actions">
