@@ -1,6 +1,6 @@
 /**
- * PORTAFOLIO L.L.S — MARÍA ALEJANDRA ACOSTA
- * Interactivity: Navbar, Scroll-Spy, Lightbox Image Viewer, Document PDF Modal, and Microinteractions.
+ * PORTAFOLIO L.L.S | MARÍA ALEJANDRA ACOSTA
+ * Interactivity: Glassmorphic Navbar, Scroll-Spy, Lightbox Image Viewer, Document PDF Modal, and Microinteractions.
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // 1. Navbar Glassmorphism on Scroll & Scroll Spy
   // ------------------------------------------------------------------------
   const navbar = document.getElementById('navbar');
-  const navLinks = document.querySelectorAll('.navbar__link');
+  const navItems = document.querySelectorAll('.navbar__item');
   const sections = document.querySelectorAll('section[id], header[id]');
   const mobileToggle = document.getElementById('navbar-toggle');
   const navMenu = document.getElementById('navbar-menu');
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Scroll-Spy detection
     let currentId = '';
-    const scrollPos = window.scrollY + 120;
+    const scrollPos = window.scrollY + 140;
 
     sections.forEach(sec => {
       const top = sec.offsetTop;
@@ -32,10 +32,10 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    navLinks.forEach(link => {
-      link.classList.remove('active');
-      if (link.getAttribute('href') === `#${currentId}`) {
-        link.classList.add('active');
+    navItems.forEach(item => {
+      item.classList.remove('active');
+      if (item.getAttribute('href') === `#${currentId}`) {
+        item.classList.add('active');
       }
     });
   });
@@ -50,8 +50,8 @@ document.addEventListener('DOMContentLoaded', () => {
       mobileToggle.setAttribute('aria-expanded', isOpen);
     });
 
-    navLinks.forEach(link => {
-      link.addEventListener('click', () => {
+    navItems.forEach(item => {
+      item.addEventListener('click', () => {
         navMenu.classList.remove('is-open');
         mobileToggle.classList.remove('is-active');
         mobileToggle.setAttribute('aria-expanded', 'false');
@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ------------------------------------------------------------------------
   // 4. Lightbox Modal Gallery (RULE 4 COMPLIANT)
-  // Controls strictly float inside image frame, never clipping screen borders
+  // Controls strictly float INSIDE image container with sharp drop shadows
   // ------------------------------------------------------------------------
   const lightbox = document.getElementById('lightbox');
   const lightboxImg = document.getElementById('lightbox-img');
@@ -154,7 +154,6 @@ document.addEventListener('DOMContentLoaded', () => {
   if (lightboxNext) lightboxNext.addEventListener('click', showNextImage);
   if (lightboxPrev) lightboxPrev.addEventListener('click', showPrevImage);
 
-  // Click outside image stage to close
   if (lightbox) {
     lightbox.addEventListener('click', (e) => {
       if (e.target === lightbox) {
@@ -219,7 +218,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const embedWrapper = document.getElementById(targetId);
       if (embedWrapper) {
         const isOpen = embedWrapper.classList.toggle('is-open');
-        btn.textContent = isOpen ? '✕ Close Preview' : '👁 Quick Preview';
+        btn.textContent = isOpen ? 'Close Preview' : 'Quick Preview';
       }
     });
   });

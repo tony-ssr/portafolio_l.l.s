@@ -1,5 +1,5 @@
 /* ==========================================================================
-   PORTAFOLIO L.L.S — MARÍA ALEJANDRA ACOSTA
+   PORTAFOLIO L.L.S | MARÍA ALEJANDRA ACOSTA
    Aesthetic Sanrio Chococat & Apple Human Interface Design System
    ========================================================================== */
 
@@ -265,7 +265,7 @@ button {
   transition: all var(--transition-fast);
   display: inline-flex;
   align-items: center;
-  gap: 5px;
+  gap: 6px;
 }
 
 .navbar__item:hover {
@@ -282,6 +282,10 @@ button {
   background: var(--chococat-collar);
   color: #FFFFFF;
   box-shadow: 0 4px 14px rgba(66, 153, 225, 0.4);
+}
+
+.navbar__item.active img {
+  filter: brightness(0) invert(1);
 }
 
 .navbar__toggle {
@@ -528,7 +532,10 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.25rem;
+}
+
+.hero__journal-icon img {
+  filter: invert(47%) sepia(85%) saturate(543%) hue-rotate(170deg) brightness(94%) contrast(89%);
 }
 
 .hero__journal-title {
@@ -972,10 +979,13 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.1rem;
   background: var(--chococat-collar-soft);
   color: var(--chococat-collar-dark);
   flex-shrink: 0;
+}
+
+.reflection-card__icon-bubble img {
+  filter: invert(47%) sepia(85%) saturate(543%) hue-rotate(170deg) brightness(94%) contrast(89%);
 }
 
 .reflection-card--warning .reflection-card__icon-bubble {
@@ -983,9 +993,17 @@ button {
   color: #8C6200;
 }
 
+.reflection-card--warning .reflection-card__icon-bubble img {
+  filter: invert(72%) sepia(80%) saturate(540%) hue-rotate(5deg) brightness(96%) contrast(88%);
+}
+
 .reflection-card--success .reflection-card__icon-bubble {
   background: var(--chococat-mint);
   color: var(--chococat-mint-dark);
+}
+
+.reflection-card--success .reflection-card__icon-bubble img {
+  filter: invert(45%) sepia(45%) saturate(850%) hue-rotate(95deg) brightness(94%) contrast(90%);
 }
 
 .reflection-card__title {
