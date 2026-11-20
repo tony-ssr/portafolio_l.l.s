@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="100%" height="100%">
+  <defs>
+    <filter id="badge-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#4DA3D9" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <!-- Circular Badge Backdrop with Apple-style glass border -->
+  <circle cx="80" cy="80" r="74" fill="#FFFDF9" stroke="#4DA3D9" stroke-width="3.5" filter="url(#badge-glow)"/>
+  <circle cx="80" cy="80" r="68" fill="none" stroke="#F7CA44" stroke-width="1.5" stroke-dasharray="4 3"/>
+
+  <!-- Chococat Character in Badge -->
+  <g transform="translate(8, 14) scale(0.72)">
+    <!-- Ears -->
+    <path d="M 46 72 L 32 20 C 32 16 38 14 44 18 L 78 50 Z" fill="#211E1D"/>
+    <path d="M 47 62 L 38 27 C 38 25 41 24 44 26 L 68 49 Z" fill="#FEEFD8"/>
+    <path d="M 154 72 L 168 20 C 168 16 162 14 156 18 L 122 50 Z" fill="#211E1D"/>
+    <path d="M 153 62 L 162 27 C 162 25 159 24 156 26 L 132 49 Z" fill="#FEEFD8"/>
+    
+    <!-- Head -->
+    <ellipse cx="100" cy="94" rx="66" ry="56" fill="#211E1D"/>
+    
+    <!-- Whiskers -->
+    <line x1="40" y1="83" x2="6" y2="74" stroke="#211E1D" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="6" cy="74" r="3" fill="#211E1D"/>
+    <line x1="37" y1="94" x2="2" y2="94" stroke="#211E1D" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="2" cy="94" r="3" fill="#211E1D"/>
+    <line x1="40" y1="105" x2="6" y2="114" stroke="#211E1D" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="6" cy="114" r="3" fill="#211E1D"/>
+    
+    <line x1="160" y1="83" x2="194" y2="74" stroke="#211E1D" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="194" cy="74" r="3" fill="#211E1D"/>
+    <line x1="163" y1="94" x2="198" y2="94" stroke="#211E1D" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="198" cy="94" r="3" fill="#211E1D"/>
+    <line x1="160" y1="105" x2="194" y2="114" stroke="#211E1D" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="194" cy="114" r="3" fill="#211E1D"/>
+    
+    <!-- Eyes -->
+    <ellipse cx="73" cy="93" rx="16.5" ry="21" fill="#FFFFFF"/>
+    <ellipse cx="127" cy="93" rx="16.5" ry="21" fill="#FFFFFF"/>
+    <ellipse cx="73" cy="94" rx="9" ry="12.5" fill="#211E1D"/>
+    <ellipse cx="127" cy="94" rx="9" ry="12.5" fill="#211E1D"/>
+    <circle cx="70" cy="89" r="3.2" fill="#FFFFFF"/>
+    <circle cx="124" cy="89" r="3.2" fill="#FFFFFF"/>
+    
+    <!-- Nose -->
+    <ellipse cx="100" cy="105" rx="5.5" ry="4" fill="#58311B"/>
+    
+    <!-- Collar -->
+    <rect x="66" y="142" width="68" height="11" rx="5.5" fill="#4DA3D9"/>
+    <circle cx="100" cy="153" r="8" fill="#F7CA44"/>
+    <circle cx="100" cy="152.5" r="2" fill="#58311B"/>
+    <line x1="100" y1="154.5" x2="100" y2="159" stroke="#58311B" stroke-width="1.2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Sparkles -->
+  <path d="M 128 32 Q 134 32 134 26 Q 134 32 140 32 Q 134 32 134 38 Q 134 32 128 32 Z" fill="#F7CA44"/>
+  <path d="M 26 122 Q 30 122 30 118 Q 30 122 34 122 Q 30 122 30 126 Q 30 122 26 122 Z" fill="#4DA3D9"/>
+</svg>

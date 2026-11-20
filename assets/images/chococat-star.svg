@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200" width="100%" height="100%">
+  <defs>
+    <filter id="chococat-star-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#211E1D" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+  <g id="chococat-star-char" filter="url(#chococat-star-shadow)">
+    <!-- Ears -->
+    <path d="M 66 65 L 50 16 C 50 12 56 10 62 14 L 94 45 Z" fill="#211E1D"/>
+    <path d="M 67 55 L 58 23 C 58 21 61 20 64 22 L 86 44 Z" fill="#FEEFD8"/>
+    <path d="M 174 65 L 190 16 C 190 12 184 10 178 14 L 146 45 Z" fill="#211E1D"/>
+    <path d="M 173 55 L 182 23 C 182 21 179 20 176 22 L 154 44 Z" fill="#FEEFD8"/>
+    
+    <!-- Body -->
+    <ellipse cx="120" cy="155" rx="46" ry="34" fill="#211E1D"/>
+    
+    <!-- Head -->
+    <ellipse cx="120" cy="90" rx="60" ry="50" fill="#211E1D"/>
+    
+    <!-- Whiskers -->
+    <line x1="68" y1="80" x2="32" y2="72" stroke="#211E1D" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="32" cy="72" r="2.5" fill="#211E1D"/>
+    <line x1="65" y1="90" x2="28" y2="90" stroke="#211E1D" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="28" cy="90" r="2.5" fill="#211E1D"/>
+    <line x1="68" y1="100" x2="32" y2="108" stroke="#211E1D" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="32" cy="108" r="2.5" fill="#211E1D"/>
+    
+    <line x1="172" y1="80" x2="208" y2="72" stroke="#211E1D" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="208" cy="72" r="2.5" fill="#211E1D"/>
+    <line x1="175" y1="90" x2="212" y2="90" stroke="#211E1D" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="212" cy="90" r="2.5" fill="#211E1D"/>
+    <line x1="172" y1="100" x2="208" y2="108" stroke="#211E1D" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="208" cy="108" r="2.5" fill="#211E1D"/>
+    
+    <!-- Eyes -->
+    <ellipse cx="96" cy="88" rx="15" ry="19" fill="#FFFFFF"/>
+    <ellipse cx="144" cy="88" rx="15" ry="19" fill="#FFFFFF"/>
+    <ellipse cx="96" cy="89" rx="8" ry="11" fill="#211E1D"/>
+    <ellipse cx="144" cy="89" rx="8" ry="11" fill="#211E1D"/>
+    <circle cx="93" cy="85" r="3" fill="#FFFFFF"/>
+    <circle cx="141" cy="85" r="3" fill="#FFFFFF"/>
+    
+    <!-- Nose -->
+    <ellipse cx="120" cy="100" rx="5" ry="3.5" fill="#58311B"/>
+    
+    <!-- Collar & Bell -->
+    <rect x="88" y="133" width="64" height="10" rx="5" fill="#4DA3D9"/>
+    <circle cx="120" cy="143" r="7" fill="#F7CA44"/>
+    <circle cx="120" cy="142.5" r="1.8" fill="#58311B"/>
+    
+    <!-- Happy Waving Left Paw -->
+    <ellipse cx="72" cy="136" rx="10" ry="12" fill="#211E1D" transform="rotate(-30, 72, 136)"/>
+    
+    <!-- Right Paw holding Star -->
+    <ellipse cx="166" cy="142" rx="11" ry="9" fill="#211E1D"/>
+    
+    <!-- Big Golden Star -->
+    <g transform="translate(168, 120) scale(0.9)">
+      <polygon points="15,0 20,10 30,12 23,20 25,30 15,25 5,30 7,20 0,12 10,10" fill="#F7CA44" stroke="#E5B832" stroke-width="1.5"/>
+      <circle cx="15" cy="17" r="3" fill="#FFFFFF" opacity="0.6"/>
+    </g>
+    
+    <!-- Extra gentle sparkles -->
+    <path d="M 40 40 Q 45 40 45 35 Q 45 40 50 40 Q 45 40 45 45 Q 45 40 40 40 Z" fill="#F7CA44"/>
+    <path d="M 195 45 Q 200 45 200 40 Q 200 45 205 45 Q 200 45 200 50 Q 200 45 195 45 Z" fill="#4DA3D9"/>
+  </g>
+</svg>

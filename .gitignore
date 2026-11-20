@@ -1,0 +1,15 @@
+# Operating System files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# Source materials (kept locally, organized into assets/)
+Archivos necesarios/
+Prompt Pagina/
+
