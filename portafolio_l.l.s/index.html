@@ -3,214 +3,250 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio L.L.S | María Alejandra Acosta</title>
-  <meta name="description" content="Academic Portfolio for Language Learning Strategies (L.L.S.) by María Alejandra Acosta, Bachelor's Degree in Spanish and English Teaching.">
-  <meta name="author" content="María Alejandra Acosta">
-  
-  <!-- Favicon Chococat -->
+  <title>Portfolio L.L.S | María Alejandra Acosta | Academic Portfolio</title>
+  <meta name="description" content="Academic Portfolio on Language Learning Strategies (LLS) by María Alejandra Acosta, 7th Semester Bachelor in Spanish and English Teaching at Universidad de Nariño.">
   <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
-  
-  <!-- Stylesheet -->
+
+  <!-- Typography: Plus Jakarta Sans & Outfit (Google Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body>
+<body class="site-body">
 
   <!-- ======================================================================
-       Floating Island Navbar (Apple Glassmorphism)
+       Dynamic Ambient Aurora Blobs (Glassmorphism Enablers)
        ====================================================================== -->
-  <div class="navbar-wrapper">
-    <header class="navbar" id="navbar">
-      <a href="#about" class="navbar__brand" aria-label="Go to top">
-        <div class="navbar__avatar">
-          <img src="assets/images/chococat-head.svg" alt="Chococat Logo">
+  <div class="ambient-mesh" aria-hidden="true">
+    <div class="ambient-blob ambient-blob--sky"></div>
+    <div class="ambient-blob ambient-blob--rose"></div>
+    <div class="ambient-blob ambient-blob--amber"></div>
+    <div class="ambient-blob ambient-blob--mint"></div>
+  </div>
+
+  <!-- Background Decorative Grid Matrix -->
+  <div class="bg-matrix-overlay" aria-hidden="true"></div>
+
+  <!-- ======================================================================
+       Apple Island Floating Navigation Bar
+       ====================================================================== -->
+  <header class="navbar-wrapper">
+    <nav class="navbar" id="navbar" aria-label="Main Navigation">
+      <a href="#about" class="navbar__brand" aria-label="María Alejandra Acosta Portfolio">
+        <div class="navbar__brand-avatar">
+          <img src="assets/images/chococat-head.svg" alt="" width="26" height="26" aria-hidden="true">
         </div>
-        <div class="navbar__brand-info">
-          <span class="navbar__name">María Alejandra</span>
-          <span class="navbar__role">Portfolio L.L.S</span>
+        <div class="navbar__brand-text">
+          <span class="navbar__brand-name">María Alejandra</span>
+          <span class="navbar__brand-sub">PORTFOLIO L.L.S</span>
         </div>
       </a>
 
-      <!-- Desktop Navigation Menu -->
-      <nav class="navbar__menu" id="navbar-menu" aria-label="Main Navigation">
-        <a href="#about" class="navbar__item active">
-          <img src="assets/images/icons/nav-about.svg" alt="" width="16" height="16" aria-hidden="true">
-          <span>About</span>
-        </a>
-        <a href="#infographic" class="navbar__item">
-          <img src="assets/images/icons/nav-infographic.svg" alt="" width="16" height="16" aria-hidden="true">
-          <span>Infographic</span>
-        </a>
-        <a href="#sill" class="navbar__item">
-          <img src="assets/images/icons/nav-sill.svg" alt="" width="16" height="16" aria-hidden="true">
-          <span>S.I.L.L.</span>
-        </a>
-        <a href="#metacognitive-video" class="navbar__item">
-          <img src="assets/images/icons/nav-video.svg" alt="" width="16" height="16" aria-hidden="true">
-          <span>LLS Video</span>
-        </a>
-        <a href="#zimmerman" class="navbar__item">
-          <img src="assets/images/icons/nav-zimmerman.svg" alt="" width="16" height="16" aria-hidden="true">
-          <span>Zimmerman</span>
-        </a>
-        <a href="#podcast" class="navbar__item">
-          <img src="assets/images/icons/nav-podcast.svg" alt="" width="16" height="16" aria-hidden="true">
-          <span>Podcast</span>
-        </a>
-        <a href="#lesson-plan" class="navbar__item">
-          <img src="assets/images/icons/nav-lesson.svg" alt="" width="16" height="16" aria-hidden="true">
-          <span>Lesson Plan</span>
-        </a>
-      </nav>
+      <!-- Desktop Nav Items -->
+      <ul class="navbar__menu" id="navbar-menu" role="menubar">
+        <li role="none"><a href="#about" class="navbar__item active" role="menuitem"><img src="assets/images/icons/nav-about.svg" alt="" width="16" height="16" aria-hidden="true"><span>About</span></a></li>
+        <li role="none"><a href="#infographic" class="navbar__item" role="menuitem"><img src="assets/images/icons/nav-infographic.svg" alt="" width="16" height="16" aria-hidden="true"><span>Infographic</span></a></li>
+        <li role="none"><a href="#sill" class="navbar__item" role="menuitem"><img src="assets/images/icons/nav-sill.svg" alt="" width="16" height="16" aria-hidden="true"><span>S.I.L.L.</span></a></li>
+        <li role="none"><a href="#metacognitive-video" class="navbar__item" role="menuitem"><img src="assets/images/icons/nav-video.svg" alt="" width="16" height="16" aria-hidden="true"><span>LLS Video</span></a></li>
+        <li role="none"><a href="#zimmerman" class="navbar__item" role="menuitem"><img src="assets/images/icons/nav-zimmerman.svg" alt="" width="16" height="16" aria-hidden="true"><span>Zimmerman</span></a></li>
+        <li role="none"><a href="#podcast" class="navbar__item" role="menuitem"><img src="assets/images/icons/nav-podcast.svg" alt="" width="16" height="16" aria-hidden="true"><span>Podcast</span></a></li>
+        <li role="none"><a href="#lesson-plan" class="navbar__item" role="menuitem"><img src="assets/images/icons/nav-lesson.svg" alt="" width="16" height="16" aria-hidden="true"><span>Lesson Plan</span></a></li>
+      </ul>
 
       <!-- Mobile Hamburger Toggle -->
-      <button class="navbar__toggle" id="navbar-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
-        <span class="navbar__toggle-icon">
-          <span class="navbar__toggle-line"></span>
-          <span class="navbar__toggle-line"></span>
-          <span class="navbar__toggle-line"></span>
-        </span>
+      <button class="navbar__toggle" id="navbar-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navbar-menu">
+        <span class="navbar__toggle-bar"></span>
+        <span class="navbar__toggle-bar"></span>
+        <span class="navbar__toggle-bar"></span>
       </button>
-    </header>
-  </div>
+    </nav>
+  </header>
 
   <main>
     <!-- ====================================================================
-         Hero & About Me Bento Grid
+         Hero Section & About Me Bento Showcase
          ==================================================================== -->
-    <header class="hero" id="about">
+    <section class="hero-section" id="about">
       <div class="container">
-        <div class="hero__bento">
-          
-          <!-- Left Profile Bento Card -->
-          <article class="hero__profile-card">
-            <div class="hero__status-badge">
-              <span class="hero__status-dot"></span>
+        <div class="hero-grid">
+
+          <!-- Left Profile Bento Card with 3D Tilt -->
+          <article class="hero-profile-card" data-tilt>
+            <div class="profile-card__glow-highlight"></div>
+            
+            <div class="profile-card__status-chip">
+              <span class="status-pulse-dot"></span>
               <span>Active Student &bull; 7th Semester</span>
             </div>
 
-            <div class="hero__avatar-container">
-              <div class="hero__avatar-ring">
-                <img src="assets/images/maria-alejandra-profile.jpg" alt="Photograph of María Alejandra Acosta" class="hero__avatar-img">
+            <div class="profile-card__avatar-wrapper">
+              <div class="profile-card__avatar-glow"></div>
+              <div class="profile-card__avatar-frame">
+                <img src="assets/images/maria-alejandra-profile.jpg" alt="Photograph of María Alejandra Acosta" class="profile-card__avatar-img">
               </div>
-              <img src="assets/images/chococat-badge.svg" alt="Chococat Badge" class="hero__avatar-badge" title="Chococat Academic Companion">
+              <img src="assets/images/chococat-badge.svg" alt="Chococat Badge" class="profile-card__companion-badge" title="Chococat Academic Companion">
             </div>
 
-            <h1 class="hero__name">María Alejandra Acosta</h1>
-            <p class="hero__title-sub">Portfolio L.L.S</p>
+            <h1 class="profile-card__name">María Alejandra Acosta</h1>
+            <p class="profile-card__subtitle">Portfolio L.L.S</p>
 
-            <div class="hero__meta-list">
-              <div class="hero__meta-item">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4299E1" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            <div class="profile-card__chips-grid">
+              <div class="profile-chip">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#0284c7" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
                 <span>21 years old</span>
               </div>
-              <div class="hero__meta-item">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4299E1" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+              <div class="profile-chip">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#0284c7" stroke-width="2.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
                 <span>Spanish &amp; English Teaching</span>
               </div>
-              <div class="hero__meta-item">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4299E1" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+              <div class="profile-chip">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#0284c7" stroke-width="2.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
                 <span>Universidad de Nariño</span>
               </div>
             </div>
           </article>
 
-          <!-- Right Journal Bento Card (About Me - 100% Exact Text) -->
-          <article class="hero__journal-card">
-            <!-- Real Chococat Floating Companion Sticker (Transparent RGBA) -->
-            <img src="assets/images/chococat-ranking-2026-clean.png" alt="Chococat Sticker" class="hero__cat-companion" title="Chococat Companion">
+          <!-- Right Journal Bento Card (About Me - 100% Exact Text) with 3D Tilt -->
+          <article class="hero-journal-card" data-tilt>
+            <div class="washi-tape washi-tape--sky"></div>
+            
+            <!-- Real Chococat Floating Companion Sticker -->
+            <img src="assets/images/chococat-ranking-2026-clean.png" alt="Chococat Sticker" class="hero-journal__cat-sticker floating-bob" title="Chococat Companion">
 
-            <div class="hero__journal-header">
-              <div class="hero__journal-title-wrap">
-                <div class="hero__journal-icon">
-                  <img src="assets/images/icons/nav-about.svg" alt="" width="22" height="22" aria-hidden="true">
-                </div>
-                <h2 class="hero__journal-title">About me</h2>
+            <div class="hero-journal__header">
+              <div class="hero-journal__icon-box">
+                <img src="assets/images/icons/nav-about.svg" alt="" width="22" height="22" aria-hidden="true">
               </div>
-              <span class="hero__journal-tag">Personal Journey &amp; Teaching Philosophy</span>
+              <div>
+                <span class="hero-journal__category">Academic Identity &bull; Teaching Philosophy</span>
+                <h2 class="hero-journal__title">About me</h2>
+              </div>
             </div>
 
-            <p class="hero__journal-body">My name is María Alejandra Acosta. I am 21 years old and currently in my seventh semester of the Bachelor's Degree in Spanish and English Teaching. My passion for becoming an educator comes from a very personal place: I want to transform the way languages are experienced in the classroom. Looking back at my own journey, I often felt the limitations of rigid, traditional methods, and that is why my purpose as a future teacher is to ensure my students have far better, warmer, and more inspiring experiences learning Spanish and English than the ones I had. I want to build a space where they feel truly supported, confident, and excited to discover their own voices through language.</p>
+            <!-- 100% Exact Word-for-Word Text from Portfolio LLS.docx -->
+            <p class="hero-journal__text">My name is María Alejandra Acosta. I am 21 years old and currently in my seventh semester of the Bachelor's Degree in Spanish and English Teaching. My passion for becoming an educator comes from a very personal place: I want to transform the way languages are experienced in the classroom. Looking back at my own journey, I often felt the limitations of rigid, traditional methods, and that is why my purpose as a future teacher is to ensure my students have far better, warmer, and more inspiring experiences learning Spanish and English than the ones I had. I want to build a space where they feel truly supported, confident, and excited to discover their own voices through language.</p>
+
+            <div class="hero-journal__footer">
+              <span class="stamp-badge">
+                <img src="assets/images/icons/icon-sparkle.svg" alt="" width="14" height="14" aria-hidden="true">
+                Personal Statement Verified
+              </span>
+              <span class="hero-journal__institution">Bachelor's Degree in Language Education</span>
+            </div>
           </article>
 
         </div>
       </div>
-    </header>
+    </section>
 
     <!-- ====================================================================
          Section 1: Infographic
          ==================================================================== -->
     <section class="section" id="infographic" aria-labelledby="infographic-heading">
       <div class="container">
-        <div class="section__header">
-          <span class="section__pill">
-            <img src="assets/images/icons/nav-infographic.svg" alt="" width="15" height="15" aria-hidden="true">
+        
+        <div class="section-badge-header">
+          <div class="section-tag-pill">
+            <img src="assets/images/icons/nav-infographic.svg" alt="" width="16" height="16" aria-hidden="true">
             <span>Module 01 &bull; Visual Synthesis</span>
-          </span>
-          <h2 id="infographic-heading" class="section__title">infographic</h2>
-          <p class="section__desc">Rebecca Oxford’s Language Learning Strategies: Memory, Cognitive, and Social Taxonomies.</p>
+          </div>
+          <h2 id="infographic-heading" class="section-main-title">infographic</h2>
+          <p class="section-lead-desc">Rebecca Oxford’s Language Learning Strategies: Memory, Cognitive, and Social Taxonomies.</p>
         </div>
 
-        <!-- Media Showcase Card -->
-        <div class="showcase-card content-block">
-          <div class="showcase-card__image-box" data-lightbox-index="0" role="button" tabindex="0" aria-label="Open infographic in full view">
-            <img src="assets/images/infografia-oxford-lls.jpg" alt="Rebecca Oxford Language Learning Strategies Infographic" class="showcase-card__img">
-            <div class="showcase-card__overlay">
-              <span class="showcase-card__zoom-btn">
+        <!-- Museum Gallery Showcase Card -->
+        <div class="gallery-showcase-card" data-tilt>
+          <div class="gallery-frame" data-lightbox-index="0" role="button" tabindex="0" aria-label="Open Rebecca Oxford Infographic in fullscreen viewer">
+            <img src="assets/images/infografia-oxford-lls.jpg" alt="Rebecca Oxford Language Learning Strategies Infographic" class="gallery-frame__img">
+            <div class="gallery-frame__overlay">
+              <div class="magnifier-pill">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-                View High-Resolution Infographic
-              </span>
+                <span>Click to Expand Infographic</span>
+              </div>
             </div>
           </div>
-          <div class="showcase-card__footer">
-            <span>Visual synthesis poster: Rebecca Oxford's LLS classification</span>
-            <span class="showcase-card__badge">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
-              High Definition
-            </span>
+          <div class="gallery-card__bottom-bar">
+            <div class="gallery-card__info">
+              <span class="gallery-card__title">Rebecca Oxford's LLS Classification Poster</span>
+              <span class="gallery-card__sub">Visual taxonomic synthesis of Memory, Cognitive, and Social learning strategies</span>
+            </div>
+            <div class="gallery-card__chips">
+              <span class="pill-chip pill-chip--sky">High Resolution</span>
+              <span class="pill-chip pill-chip--neutral">First Course Activity</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3-Column FreeFrontend Bento Reflection Deck (100% Exact Text) -->
+        <div class="bento-deck">
+          
+          <!-- Pillar 1: Strengths -->
+          <article class="bento-card bento-card--strength" data-tilt>
+            <div class="washi-tape washi-tape--sky"></div>
+            <div class="bento-card__badge-row">
+              <span class="pill-chip pill-chip--sky">
+                <img src="assets/images/icons/icon-strength.svg" alt="" width="14" height="14" aria-hidden="true">
+                Key Strengths
+              </span>
+              <span class="bento-card__order">Pillar 01</span>
+            </div>
+            <h3 class="bento-card__title">Strengths &amp; Visual Synthesis</h3>
+            <p class="bento-card__text">Creating this infographic on Rebecca Oxford’s Language Learning Strategies was our first activity in the course, and it helped me connect theoretical concepts with visual organization. Looking at what we did well, I think the overall structure and synthesis of the content worked nicely. my group and I divided the poster into three clear categories (Memory, Cognitive, and Social strategies) and used short bullet points, concrete classroom examples like pair work and clarification questions, and visual aids such as comic strips and small drawings. Organizing the information this way made the theory more approachable and easier to follow rather than overwhelming.</p>
+            <div class="bento-card__footer">
+              <span class="bento-card__stamp">Academic Synthesis</span>
+              <img src="assets/images/icons/icon-sparkle.svg" alt="" width="16" height="16" class="bento-card__sparkle" aria-hidden="true">
+            </div>
+          </article>
+
+          <!-- Pillar 2: Challenges -->
+          <article class="bento-card bento-card--challenge" data-tilt>
+            <div class="washi-tape washi-tape--honey"></div>
+            <div class="bento-card__badge-row">
+              <span class="pill-chip pill-chip--amber">
+                <img src="assets/images/icons/icon-challenge.svg" alt="" width="14" height="14" aria-hidden="true">
+                Growth Challenges
+              </span>
+              <span class="bento-card__order">Pillar 02</span>
+            </div>
+            <h3 class="bento-card__title">Challenges &amp; Presentation Delivery</h3>
+            <p class="bento-card__text">However, looking back at how we presented the topic, there are areas that did not go as well. In particular, my group and I did not distribute our speaking time equally, so some classmates ended up talking much more than others during the presentation. Because the turns were unbalanced, we rushed through parts of the explanation and did not have enough space to discuss how teachers can actually model these strategies for students who struggle with speaking anxiety. Relying a bit too much on listing the subcategories instead of analyzing their practical impact in class also made our delivery feel uneven.</p>
+            <div class="bento-card__footer">
+              <span class="bento-card__stamp">Pedagogical Growth</span>
+              <img src="assets/images/icons/icon-sparkle.svg" alt="" width="16" height="16" class="bento-card__sparkle" aria-hidden="true">
+            </div>
+          </article>
+
+          <!-- Pillar 3: Action Plan -->
+          <article class="bento-card bento-card--action" data-tilt>
+            <div class="washi-tape washi-tape--mint"></div>
+            <div class="bento-card__badge-row">
+              <span class="pill-chip pill-chip--emerald">
+                <img src="assets/images/icons/icon-action.svg" alt="" width="14" height="14" aria-hidden="true">
+                Strategic Action Plan
+              </span>
+              <span class="bento-card__order">Pillar 03</span>
+            </div>
+            <h3 class="bento-card__title">Action Plan for Future Teaching Tasks</h3>
+            <p class="bento-card__text">To improve in future presentations and teaching tasks, I would organize the time distribution with my group beforehand and assign balanced sections so every member has an equal opportunity to participate. Doing a brief rehearsal together would also help us control our pacing and ensure that each strategy is explained with clear, relatable classroom examples rather than just definitions. Applying cooperative and self-monitoring strategies to our own teamwork will help us communicate course concepts more effectively next time.</p>
+            <div class="bento-card__footer">
+              <span class="bento-card__stamp">Future Action</span>
+              <img src="assets/images/icons/icon-sparkle.svg" alt="" width="16" height="16" class="bento-card__sparkle" aria-hidden="true">
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Chococat Animated Academic Callout -->
+        <div class="chococat-character-callout">
+          <img src="assets/images/chococat-curious.gif" alt="Chococat Curious" class="chococat-character-callout__gif">
+          <div class="chococat-character-callout__content">
+            <span class="chococat-character-callout__pill">Curious Exploration &bull; Module 01</span>
+            <p class="chococat-character-callout__text">Visualizing Memory, Cognitive, and Social Strategies for accessible classroom pedagogy.</p>
           </div>
         </div>
 
-        <!-- Reflective Stack (100% Exact Text) -->
-        <div class="reflection-stack content-block">
-          <article class="reflection-card">
-            <div class="reflection-card__header">
-              <span class="reflection-card__icon-bubble">
-                <img src="assets/images/icons/icon-strength.svg" alt="" width="18" height="18" aria-hidden="true">
-              </span>
-              <h3 class="reflection-card__title">Strengths &amp; Visual Synthesis</h3>
-            </div>
-            <p class="reflection-card__text">Creating this infographic on Rebecca Oxford’s Language Learning Strategies was our first activity in the course, and it helped me connect theoretical concepts with visual organization. Looking at what we did well, I think the overall structure and synthesis of the content worked nicely. my group and I divided the poster into three clear categories (Memory, Cognitive, and Social strategies) and used short bullet points, concrete classroom examples like pair work and clarification questions, and visual aids such as comic strips and small drawings. Organizing the information this way made the theory more approachable and easier to follow rather than overwhelming.</p>
-          </article>
-
-          <article class="reflection-card reflection-card--warning">
-            <div class="reflection-card__header">
-              <span class="reflection-card__icon-bubble">
-                <img src="assets/images/icons/icon-challenge.svg" alt="" width="18" height="18" aria-hidden="true">
-              </span>
-              <h3 class="reflection-card__title">Challenges &amp; Presentation Delivery</h3>
-            </div>
-            <p class="reflection-card__text">However, looking back at how we presented the topic, there are areas that did not go as well. In particular, my group and I did not distribute our speaking time equally, so some classmates ended up talking much more than others during the presentation. Because the turns were unbalanced, we rushed through parts of the explanation and did not have enough space to discuss how teachers can actually model these strategies for students who struggle with speaking anxiety. Relying a bit too much on listing the subcategories instead of analyzing their practical impact in class also made our delivery feel uneven.</p>
-          </article>
-
-          <article class="reflection-card reflection-card--success">
-            <div class="reflection-card__header">
-              <span class="reflection-card__icon-bubble">
-                <img src="assets/images/icons/icon-action.svg" alt="" width="18" height="18" aria-hidden="true">
-              </span>
-              <h3 class="reflection-card__title">Action Plan for Future Teaching Tasks</h3>
-            </div>
-            <p class="reflection-card__text">To improve in future presentations and teaching tasks, I would organize the time distribution with my group beforehand and assign balanced sections so every member has an equal opportunity to participate. Doing a brief rehearsal together would also help us control our pacing and ensure that each strategy is explained with clear, relatable classroom examples rather than just definitions. Applying cooperative and self-monitoring strategies to our own teamwork will help us communicate course concepts more effectively next time.</p>
-          </article>
-        </div>
-
-        <!-- Cute Chococat Animated GIF Dialogue Banner -->
-        <div class="chococat-dialogue-banner">
-          <img src="assets/images/chococat-curious.gif" alt="Chococat Curious" class="chococat-dialogue-banner__gif">
-          <div>
-            <span class="chococat-dialogue-banner__badge">Curious Exploration</span>
-            <span class="chococat-dialogue-banner__text">Visualizing Memory, Cognitive &amp; Social Strategies</span>
-          </div>
-        </div>
       </div>
     </section>
 
@@ -219,262 +255,395 @@
          ==================================================================== -->
     <section class="section section--alt" id="sill" aria-labelledby="sill-heading">
       <div class="container">
-        <div class="section__header">
-          <span class="section__pill">
-            <img src="assets/images/icons/nav-sill.svg" alt="" width="15" height="15" aria-hidden="true">
-            <span>Module 02 &bull; Diagnostic Assessment</span>
-          </span>
-          <h2 id="sill-heading" class="section__title">S.I.L.L.</h2>
-          <p class="section__desc">Strategy Inventory for Language Learning (SILL) &amp; Individual Profile Report.</p>
+        
+        <div class="section-badge-header">
+          <div class="section-tag-pill">
+            <img src="assets/images/icons/nav-sill.svg" alt="" width="16" height="16" aria-hidden="true">
+            <span>Module 02 &bull; Strategy Inventory</span>
+          </div>
+          <h2 id="sill-heading" class="section-main-title">S.I.L.L.</h2>
+          <p class="section-lead-desc">Strategy Inventory for Language Learning: Personal Learning Profile Diagnostic Analysis.</p>
         </div>
 
-        <!-- Image Showcase Card (SILL Graph) -->
-        <div class="showcase-card content-block">
-          <div class="showcase-card__image-box" data-lightbox-index="1" role="button" tabindex="0" aria-label="Open SILL graph in full view">
-            <img src="assets/images/sill-profile-graph.jpg" alt="Strategy Inventory for Language Learning Results Chart" class="showcase-card__img">
-            <div class="showcase-card__overlay">
-              <span class="showcase-card__zoom-btn">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-                View SILL Profile Graph
+        <!-- Dual Document & Diagnostic Gallery Grid -->
+        <div class="docs-showcase-grid">
+          
+          <!-- Diagnostic Score Graph Image Card -->
+          <div class="gallery-showcase-card docs-showcase-grid__item" data-tilt>
+            <div class="gallery-frame" data-lightbox-index="1" role="button" tabindex="0" aria-label="Open SILL Diagnostic Breakdown in fullscreen viewer">
+              <img src="assets/images/sill-profile-graph.jpg" alt="SILL Strategy Inventory Diagnostic Sheet and Score Breakdown" class="gallery-frame__img">
+              <div class="gallery-frame__overlay">
+                <div class="magnifier-pill">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                  <span>Click to Expand Diagnostic</span>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-card__bottom-bar">
+              <div class="gallery-card__info">
+                <span class="gallery-card__title">SILL Diagnostic Breakdown</span>
+                <span class="gallery-card__sub">Averages: Metacognitive 4.0, Social 3.8, Memory 2.5, Overall 3.32</span>
+              </div>
+              <span class="pill-chip pill-chip--sky">Score Sheet</span>
+            </div>
+          </div>
+
+          <!-- Academic Document Folder Card -->
+          <div class="folder-document-card docs-showcase-grid__item" data-tilt>
+            <div class="folder-document-card__tab">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+              <span>Verified Academic Document &bull; 3 Pages</span>
+            </div>
+
+            <div class="folder-document-card__body">
+              <div class="folder-document-card__header-row">
+                <div class="folder-document-card__icon-wrap">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0284c7" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                </div>
+                <div>
+                  <h3 class="folder-document-card__title">My LLS Profile - SILL Results</h3>
+                  <p class="folder-document-card__meta">Official Diagnostic Report &bull; Comprehensive Strategy Analysis</p>
+                </div>
+              </div>
+
+              <div class="folder-document-card__tags">
+                <span class="pill-chip pill-chip--neutral">PDF Format</span>
+                <span class="pill-chip pill-chip--neutral">180 KB</span>
+                <span class="pill-chip pill-chip--sky">Verified Diagnostic</span>
+              </div>
+
+              <!-- Interactive In-Card Document Previewer (Toggled via JS) -->
+              <div class="folder-document-card__inline-viewer" id="sill-inline-viewer" style="display: none;">
+                <iframe src="assets/documents/My-LLS-Profile-SILL-Results.pdf" title="Embedded SILL PDF Viewer" loading="lazy"></iframe>
+              </div>
+
+              <div class="folder-document-card__actions">
+                <button class="btn-action btn-action--primary doc-preview-trigger" data-pdf="assets/documents/My-LLS-Profile-SILL-Results.pdf" data-title="My LLS Profile - SILL Results">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                  <span>Fullscreen View</span>
+                </button>
+                <button class="btn-action btn-action--secondary inline-toggle-btn" data-target="sill-inline-viewer">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line></svg>
+                  <span>In-Page Preview</span>
+                </button>
+                <a href="assets/documents/My-LLS-Profile-SILL-Results.pdf" download class="btn-action btn-action--tertiary">
+                  <img src="assets/images/icons/icon-download.svg" alt="" width="16" height="16" aria-hidden="true">
+                  <span>Download PDF</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- 3-Column FreeFrontend Bento Reflection Deck (100% Exact Text) -->
+        <div class="bento-deck">
+          
+          <!-- Pillar 1: Strengths -->
+          <article class="bento-card bento-card--strength" data-tilt>
+            <div class="washi-tape washi-tape--sky"></div>
+            <div class="bento-card__badge-row">
+              <span class="pill-chip pill-chip--sky">
+                <img src="assets/images/icons/icon-strength.svg" alt="" width="14" height="14" aria-hidden="true">
+                Key Strengths
               </span>
+              <span class="bento-card__order">Pillar 01</span>
             </div>
-          </div>
-          <div class="showcase-card__footer">
-            <span>Diagnostic Breakdown: Memory, Cognitive, Compensation, Metacognitive, Affective, Social</span>
-            <span class="showcase-card__badge">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
-              Assessment Data
-            </span>
-          </div>
-        </div>
-
-        <!-- Document Vault Card (SILL PDF) with Action Buttons -->
-        <div class="vault-card content-block">
-          <div class="vault-card__top">
-            <div class="vault-card__icon-box">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+            <h3 class="bento-card__title">Learner Self-Awareness &amp; Socio-Affective Strengths</h3>
+            <p class="bento-card__text">Completing the Strategy Inventory for Language Learning (SILL) and building my LLS profile allowed me to examine my own habits as an English learner with greater self-awareness. Regarding what I did well, I was able to interpret my results honestly and connect them to real classroom situations rather than simply repeating numbers. Recognizing that my strongest areas are managing emotions and learning with others helped me to understand why I naturally lean toward socio-affective strategies, such as calming my anxiety before speaking, accepting errors as part of learning, and rehearsing ideas with peers. I also translated my lowest score, remembering more effectively, into a concrete and realistic development goal by designing a weekly vocabulary log with original sentences and short active-recall reviews.</p>
+            <div class="bento-card__footer">
+              <span class="bento-card__stamp">Diagnostic Honesty</span>
+              <img src="assets/images/icons/icon-sparkle.svg" alt="" width="16" height="16" class="bento-card__sparkle" aria-hidden="true">
             </div>
-            <div class="vault-card__info">
-              <h3 class="vault-card__title">My LLS Profile - SILL Results</h3>
-              <p class="vault-card__meta">Official Academic Report &bull; Comprehensive Strategy Inventory &bull; PDF Document (3 Pages)</p>
-            </div>
-          </div>
-
-          <div class="vault-card__actions">
-            <button class="btn btn--primary" data-doc-view="assets/documents/My-LLS-Profile-SILL-Results.pdf" data-doc-title="My LLS Profile - SILL Results">
-              <img src="assets/images/icons/icon-preview.svg" alt="" width="16" height="16" aria-hidden="true">
-              <span>Open &amp; View</span>
-            </button>
-            <a href="assets/documents/My-LLS-Profile-SILL-Results.pdf" download="My-LLS-Profile-SILL-Results.pdf" class="btn btn--secondary">
-              <img src="assets/images/icons/icon-download.svg" alt="" width="16" height="16" aria-hidden="true">
-              <span>Download PDF</span>
-            </a>
-            <button class="btn btn--outline" data-quick-preview-target="sill-quick-embed">
-              <span>Quick Preview</span>
-            </button>
-          </div>
-
-          <div id="sill-quick-embed" class="vault-card__preview-embed">
-            <iframe class="vault-card__iframe" src="assets/documents/My-LLS-Profile-SILL-Results.pdf" title="SILL Profile Preview"></iframe>
-          </div>
-        </div>
-
-        <!-- Reflective Stack (100% Exact Text) -->
-        <div class="reflection-stack content-block">
-          <article class="reflection-card">
-            <div class="reflection-card__header">
-              <span class="reflection-card__icon-bubble">
-                <img src="assets/images/icons/icon-strength.svg" alt="" width="18" height="18" aria-hidden="true">
-              </span>
-              <h3 class="reflection-card__title">Learner Self-Awareness &amp; Socio-Affective Strengths</h3>
-            </div>
-            <p class="reflection-card__text">Completing the Strategy Inventory for Language Learning (SILL) and building my LLS profile allowed me to examine my own habits as an English learner with greater self-awareness. Regarding what I did well, I was able to interpret my results honestly and connect them to real classroom situations rather than simply repeating numbers. Recognizing that my strongest areas are managing emotions and learning with others helped me to understand why I naturally lean toward socio-affective strategies, such as calming my anxiety before speaking, accepting errors as part of learning, and rehearsing ideas with peers. I also translated my lowest score, remembering more effectively, into a concrete and realistic development goal by designing a weekly vocabulary log with original sentences and short active-recall reviews.</p>
           </article>
 
-          <article class="reflection-card reflection-card--warning">
-            <div class="reflection-card__header">
-              <span class="reflection-card__icon-bubble">
-                <img src="assets/images/icons/icon-challenge.svg" alt="" width="18" height="18" aria-hidden="true">
+          <!-- Pillar 2: Challenges -->
+          <article class="bento-card bento-card--challenge" data-tilt>
+            <div class="washi-tape washi-tape--honey"></div>
+            <div class="bento-card__badge-row">
+              <span class="pill-chip pill-chip--amber">
+                <img src="assets/images/icons/icon-challenge.svg" alt="" width="14" height="14" aria-hidden="true">
+                Growth Challenges
               </span>
-              <h3 class="reflection-card__title">Memory Routine &amp; Analysis Vulnerabilities</h3>
+              <span class="bento-card__order">Pillar 02</span>
             </div>
-            <p class="reflection-card__text">However, this activity also revealed areas where both my learning habits and my written analysis were not as strong. In my daily study routine, I have relied too much on acquiring new words passively through reading or listening without reviewing them systematically afterward, which explains my low score in memory strategies and my moderate average in compensating for missing knowledge.</p>
+            <h3 class="bento-card__title">Memory Gaps &amp; Passive Vocabulary Habits</h3>
+            <p class="bento-card__text">However, this activity also revealed areas where both my learning habits and my written analysis were not as strong. In my daily study routine, I have relied too much on acquiring new words passively through reading or listening without reviewing them systematically afterward, which explains my low score in memory strategies and my moderate average in compensating for missing knowledge.</p>
+            <div class="bento-card__footer">
+              <span class="bento-card__stamp">Pedagogical Growth</span>
+              <img src="assets/images/icons/icon-sparkle.svg" alt="" width="16" height="16" class="bento-card__sparkle" aria-hidden="true">
+            </div>
           </article>
 
-          <article class="reflection-card reflection-card--success">
-            <div class="reflection-card__header">
-              <span class="reflection-card__icon-bubble">
-                <img src="assets/images/icons/icon-action.svg" alt="" width="18" height="18" aria-hidden="true">
+          <!-- Pillar 3: Action Plan -->
+          <article class="bento-card bento-card--action" data-tilt>
+            <div class="washi-tape washi-tape--mint"></div>
+            <div class="bento-card__badge-row">
+              <span class="pill-chip pill-chip--emerald">
+                <img src="assets/images/icons/icon-action.svg" alt="" width="14" height="14" aria-hidden="true">
+                Strategic Action Plan
               </span>
-              <h3 class="reflection-card__title">Holistic Growth &amp; Action Plan</h3>
+              <span class="bento-card__order">Pillar 03</span>
             </div>
-            <p class="reflection-card__text">To improve moving forward, I want to balance my socio-affective strengths with more intentional memory and metacognitive strategies. Putting my action plan into practice by reviewing eight to ten new words each week and actively using them in class discussions will help me retain vocabulary more effectively. At the same time, paying closer attention to how all six strategy groups work together, and carefully proofreading my written reflections will help me become both a more autonomous learner and a more reflective future language teacher.</p>
+            <h3 class="bento-card__title">Balanced Repertoire &amp; Structured Vocabulary Log</h3>
+            <p class="bento-card__text">To improve moving forward, I want to balance my socio-affective strengths with more intentional memory and metacognitive strategies. Putting my action plan into practice by reviewing eight to ten new words each week and actively using them in class discussions will help me retain vocabulary more effectively. At the same time, paying closer attention to how all six strategy groups work together, and carefully proofreading my written reflections will help me become both a more autonomous learner and a more reflective future language teacher.</p>
+            <div class="bento-card__footer">
+              <span class="bento-card__stamp">Future Action</span>
+              <img src="assets/images/icons/icon-sparkle.svg" alt="" width="16" height="16" class="bento-card__sparkle" aria-hidden="true">
+            </div>
           </article>
+
         </div>
 
-        <!-- Cute Chococat Animated GIF Dialogue Banner -->
-        <div class="chococat-dialogue-banner">
-          <img src="assets/images/chococat-dancing.gif" alt="Chococat Dancing" class="chococat-dialogue-banner__gif">
-          <div>
-            <span class="chococat-dialogue-banner__badge">Diagnostic Self-Awareness</span>
-            <span class="chococat-dialogue-banner__text">Balancing emotional regulation with intentional memory habits</span>
+        <!-- Chococat Animated Academic Callout -->
+        <div class="chococat-character-callout">
+          <img src="assets/images/chococat-ranking-2024-clean.png" alt="Chococat Analyzing SILL" class="chococat-character-callout__gif floating-bob">
+          <div class="chococat-character-callout__content">
+            <span class="chococat-character-callout__pill">Diagnostic Insight &bull; Module 02</span>
+            <p class="chococat-character-callout__text">Translating quantitative inventory scores into intentional vocabulary retention routines.</p>
           </div>
         </div>
+
       </div>
     </section>
 
     <!-- ====================================================================
-         Section 3: Video sobre L.L.S (Metacognitive Strategy)
+         Section 3: Metacognitive Video
          ==================================================================== -->
     <section class="section" id="metacognitive-video" aria-labelledby="video-heading">
       <div class="container">
-        <div class="section__header">
-          <span class="section__pill">
-            <img src="assets/images/icons/nav-video.svg" alt="" width="15" height="15" aria-hidden="true">
+        
+        <div class="section-badge-header">
+          <div class="section-tag-pill">
+            <img src="assets/images/icons/nav-video.svg" alt="" width="16" height="16" aria-hidden="true">
             <span>Module 03 &bull; Autonomous Learning</span>
-          </span>
-          <h2 id="video-heading" class="section__title">Video sobre L.L.S (metacognive strategy)</h2>
-          <p class="section__desc">Dynamic theoretical examination of metacognitive self-regulation in language acquisition.</p>
-        </div>
-
-        <!-- YouTube Player Card -->
-        <div class="player-card content-block">
-          <div class="player-card__video-box">
-            <iframe 
-              src="https://www.youtube.com/embed/eWABlpCGS30" 
-              title="Video sobre L.L.S - Metacognitive Strategy" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-              allowfullscreen>
-            </iframe>
           </div>
-          <div class="player-card__footer">
-            <span class="player-card__title">Academic Video: Metacognitive Strategies &amp; Oxford’s 2017 Framework</span>
-            <a href="https://youtu.be/eWABlpCGS30?si=Zzqsur-CzvTIGIzG" target="_blank" rel="noopener noreferrer" class="btn btn--secondary">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-              <span>Watch on YouTube</span>
-            </a>
-          </div>
+          <h2 id="video-heading" class="section-main-title">Video sobre L.L.S (metacognive strategy)</h2>
+          <p class="section-lead-desc">Dynamic theoretical examination of metacognitive self-regulation in language acquisition.</p>
         </div>
 
-        <!-- Reflective Stack (100% Exact Text) -->
-        <div class="reflection-stack content-block">
-          <article class="reflection-card">
-            <div class="reflection-card__header">
-              <span class="reflection-card__icon-bubble">
-                <img src="assets/images/icons/icon-strength.svg" alt="" width="18" height="18" aria-hidden="true">
-              </span>
-              <h3 class="reflection-card__title">Theoretical Depth &amp; Conversational Style</h3>
+        <!-- macOS Studio Display Video Frame with Ambient Backlight -->
+        <div class="studio-cinema-wrapper" data-tilt>
+          <div class="studio-cinema-glow"></div>
+          
+          <div class="studio-cinema-frame">
+            <!-- macOS Window Header Bar -->
+            <div class="studio-cinema-header">
+              <div class="mac-window-dots">
+                <span class="mac-dot mac-dot--red"></span>
+                <span class="mac-dot mac-dot--yellow"></span>
+                <span class="mac-dot mac-dot--green"></span>
+              </div>
+              <div class="studio-cinema-header__title">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect><line x1="7" y1="2" x2="7" y2="22"></line><line x1="17" y1="2" x2="17" y2="22"></line><line x1="2" y1="12" x2="22" y2="12"></line><line x1="2" y1="7" x2="7" y2="7"></line><line x1="2" y1="17" x2="7" y2="17"></line><line x1="17" y1="17" x2="22" y2="17"></line><line x1="17" y1="7" x2="22" y2="7"></line></svg>
+                <span>video_metacognitive_strategy_analysis.mp4</span>
+              </div>
+              <div class="studio-cinema-header__badge">1080p FHD</div>
             </div>
-            <p class="reflection-card__text">Making this video on metacognitive strategies helped me see how learners take charge of their own progress. What worked well for my group was presenting solid theory in a dynamic, conversational way. We contrasted Oxford’s early definition of Language Learning Strategies (LLS) with her 2017 view of strategies as dynamic thoughts regulating cognitive, emotional, and social aspects. Explaining indirect metacognitive strategies through relatable examples, linking modal verbs to prior knowledge, setting SMART goals, and practicing honest self-evaluation, made the topic easy to follow.</p>
-          </article>
 
-          <article class="reflection-card reflection-card--warning">
-            <div class="reflection-card__header">
-              <span class="reflection-card__icon-bubble">
-                <img src="assets/images/icons/icon-challenge.svg" alt="" width="18" height="18" aria-hidden="true">
-              </span>
-              <h3 class="reflection-card__title">Pacing Constraints &amp; Teacher Scaffolding</h3>
+            <!-- YouTube Video Embed -->
+            <div class="studio-cinema-screen">
+              <iframe 
+                src="https://www.youtube.com/embed/eWABlpCGS30" 
+                title="Video sobre L.L.S - Metacognitive Strategy" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen 
+                loading="lazy">
+              </iframe>
             </div>
-            <p class="reflection-card__text">However, looking back at the video, there are a couple of aspects we did not handle as well. Because we spent more time on the definitions and the first two strategies, our explanation of self-evaluation near the end felt a bit rushed. In addition, we focused mostly on what independent learners do on their own without discussing how language teachers can explicitly model and scaffold these metacognitive habits during regular classes.</p>
-          </article>
 
-          <article class="reflection-card reflection-card--success">
-            <div class="reflection-card__header">
-              <span class="reflection-card__icon-bubble">
-                <img src="assets/images/icons/icon-action.svg" alt="" width="18" height="18" aria-hidden="true">
-              </span>
-              <h3 class="reflection-card__title">Future Delivery &amp; Pedagogical Connections</h3>
+            <!-- Cinema Bottom Bar -->
+            <div class="studio-cinema-footer">
+              <div class="studio-cinema-footer__info">
+                <span class="studio-cinema-footer__heading">Metacognitive Strategies &amp; Rebecca Oxford’s 2017 Framework</span>
+                <span class="studio-cinema-footer__sub">Indirect strategies, SMART goal-setting, and honest self-evaluation</span>
+              </div>
+              <a href="https://youtu.be/eWABlpCGS30?si=Zzqsur-CzvTIGIzG" target="_blank" rel="noopener noreferrer" class="btn-action btn-action--primary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                <span>Watch on YouTube</span>
+              </a>
             </div>
-            <p class="reflection-card__text">To improve future videos and teaching tasks, I would organize our pacing more evenly so that every strategy receives the same level of detail. Including a brief classroom connection on how teachers guide students to set goals and assess their progress would also strengthen the pedagogical value while keeping our natural, engaging style.</p>
-          </article>
-        </div>
-
-        <!-- Cute Chococat Animated GIF Dialogue Banner -->
-        <div class="chococat-dialogue-banner">
-          <img src="assets/images/chococat-adventure.gif" alt="Chococat Adventure" class="chococat-dialogue-banner__gif">
-          <div>
-            <span class="chococat-dialogue-banner__badge">Metacognitive Regulation</span>
-            <span class="chococat-dialogue-banner__text">Guiding learners to take charge of their own autonomous progress</span>
           </div>
         </div>
+
+        <!-- 3-Column FreeFrontend Bento Reflection Deck (100% Exact Text) -->
+        <div class="bento-deck">
+          
+          <!-- Pillar 1: Strengths -->
+          <article class="bento-card bento-card--strength" data-tilt>
+            <div class="washi-tape washi-tape--sky"></div>
+            <div class="bento-card__badge-row">
+              <span class="pill-chip pill-chip--sky">
+                <img src="assets/images/icons/icon-strength.svg" alt="" width="14" height="14" aria-hidden="true">
+                Key Strengths
+              </span>
+              <span class="bento-card__order">Pillar 01</span>
+            </div>
+            <h3 class="bento-card__title">Theoretical Depth &amp; Conversational Style</h3>
+            <p class="bento-card__text">Making this video on metacognitive strategies helped me see how learners take charge of their own progress. What worked well for my group was presenting solid theory in a dynamic, conversational way. We contrasted Oxford’s early definition of Language Learning Strategies (LLS) with her 2017 view of strategies as dynamic thoughts regulating cognitive, emotional, and social aspects. Explaining indirect metacognitive strategies through relatable examples, linking modal verbs to prior knowledge, setting SMART goals, and practicing honest self-evaluation, made the topic easy to follow.</p>
+            <div class="bento-card__footer">
+              <span class="bento-card__stamp">Conceptual Clarity</span>
+              <img src="assets/images/icons/icon-sparkle.svg" alt="" width="16" height="16" class="bento-card__sparkle" aria-hidden="true">
+            </div>
+          </article>
+
+          <!-- Pillar 2: Challenges -->
+          <article class="bento-card bento-card--challenge" data-tilt>
+            <div class="washi-tape washi-tape--honey"></div>
+            <div class="bento-card__badge-row">
+              <span class="pill-chip pill-chip--amber">
+                <img src="assets/images/icons/icon-challenge.svg" alt="" width="14" height="14" aria-hidden="true">
+                Growth Challenges
+              </span>
+              <span class="bento-card__order">Pillar 02</span>
+            </div>
+            <h3 class="bento-card__title">Pacing Constraints &amp; Teacher Scaffolding</h3>
+            <p class="bento-card__text">However, looking back at the video, there are a couple of aspects we did not handle as well. Because we spent more time on the definitions and the first two strategies, our explanation of self-evaluation near the end felt a bit rushed. In addition, we focused mostly on what independent learners do on their own without discussing how language teachers can explicitly model and scaffold these metacognitive habits during regular classes.</p>
+            <div class="bento-card__footer">
+              <span class="bento-card__stamp">Pedagogical Growth</span>
+              <img src="assets/images/icons/icon-sparkle.svg" alt="" width="16" height="16" class="bento-card__sparkle" aria-hidden="true">
+            </div>
+          </article>
+
+          <!-- Pillar 3: Action Plan -->
+          <article class="bento-card bento-card--action" data-tilt>
+            <div class="washi-tape washi-tape--mint"></div>
+            <div class="bento-card__badge-row">
+              <span class="pill-chip pill-chip--emerald">
+                <img src="assets/images/icons/icon-action.svg" alt="" width="14" height="14" aria-hidden="true">
+                Strategic Action Plan
+              </span>
+              <span class="bento-card__order">Pillar 03</span>
+            </div>
+            <h3 class="bento-card__title">Balanced Pacing &amp; Practical Classroom Scaffolding</h3>
+            <p class="bento-card__text">To improve future videos and teaching tasks, I would organize our pacing more evenly so that every strategy receives the same level of detail. Including a brief classroom connection on how teachers guide students to set goals and assess their progress would also strengthen the pedagogical value while keeping our natural, engaging style.</p>
+            <div class="bento-card__footer">
+              <span class="bento-card__stamp">Future Action</span>
+              <img src="assets/images/icons/icon-sparkle.svg" alt="" width="16" height="16" class="bento-card__sparkle" aria-hidden="true">
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Chococat Animated Academic Callout -->
+        <div class="chococat-character-callout">
+          <img src="assets/images/chococat-adventure.gif" alt="Chococat Adventure" class="chococat-character-callout__gif">
+          <div class="chococat-character-callout__content">
+            <span class="chococat-character-callout__pill">Autonomous Agency &bull; Module 03</span>
+            <p class="chococat-character-callout__text">Contrasting historical definitions with dynamic thought regulation in communicative language tasks.</p>
+          </div>
+        </div>
+
       </div>
     </section>
 
     <!-- ====================================================================
-         Section 4: Zimmerman Model
+         Section 4: Zimmerman's Model
          ==================================================================== -->
     <section class="section section--alt" id="zimmerman" aria-labelledby="zimmerman-heading">
       <div class="container">
-        <div class="section__header">
-          <span class="section__pill">
-            <img src="assets/images/icons/nav-zimmerman.svg" alt="" width="15" height="15" aria-hidden="true">
-            <span>Module 04 &bull; Self-Regulated Learning</span>
-          </span>
-          <h2 id="zimmerman-heading" class="section__title">zimmerman model</h2>
-          <p class="section__desc">Forethought, Performance, and Self-Reflection applied to authentic speaking activities.</p>
+        
+        <div class="section-badge-header">
+          <div class="section-tag-pill">
+            <img src="assets/images/icons/nav-zimmerman.svg" alt="" width="16" height="16" aria-hidden="true">
+            <span>Module 04 &bull; Self-Regulation Cycle</span>
+          </div>
+          <h2 id="zimmerman-heading" class="section-main-title">zimmerman model</h2>
+          <p class="section-lead-desc">Zimmerman’s Cyclical Self-Regulated Learning Model Applied to Speaking Performance.</p>
         </div>
 
-        <!-- Media Showcase Card -->
-        <div class="showcase-card content-block">
-          <div class="showcase-card__image-box" data-lightbox-index="2" role="button" tabindex="0" aria-label="Open Zimmerman model reflection in full view">
-            <img src="assets/images/zimmerman-model-reflection.jpg" alt="Zimmerman self-regulated learning model questions sheet" class="showcase-card__img">
-            <div class="showcase-card__overlay">
-              <span class="showcase-card__zoom-btn">
+        <!-- Museum Gallery Showcase Card -->
+        <div class="gallery-showcase-card" data-tilt>
+          <div class="gallery-frame" data-lightbox-index="2" role="button" tabindex="0" aria-label="Open Zimmerman Model Reflection in fullscreen viewer">
+            <img src="assets/images/zimmerman-model-reflection.jpg" alt="Zimmerman Model of Self-Regulated Learning Worksheet and Diagram" class="gallery-frame__img">
+            <div class="gallery-frame__overlay">
+              <div class="magnifier-pill">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-                View Full Guided Questions Sheet
-              </span>
+                <span>Click to Expand Zimmerman Cycle</span>
+              </div>
             </div>
           </div>
-          <div class="showcase-card__footer">
-            <span>Guiding reflection sheet based on "Wake Me Up When September Ends"</span>
-            <span class="showcase-card__badge">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>
-              Speaking Analysis
-            </span>
+          <div class="gallery-card__bottom-bar">
+            <div class="gallery-card__info">
+              <span class="gallery-card__title">Zimmerman's Cyclical Phases Analysis</span>
+              <span class="gallery-card__sub">Guided analysis based on 'Wake Me Up When September Ends' song activity</span>
+            </div>
+            <div class="gallery-card__chips">
+              <span class="pill-chip pill-chip--sky">Forethought</span>
+              <span class="pill-chip pill-chip--amber">Performance</span>
+              <span class="pill-chip pill-chip--emerald">Self-Reflection</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3-Column FreeFrontend Bento Reflection Deck (100% Exact Text) -->
+        <div class="bento-deck">
+          
+          <!-- Pillar 1: Strengths -->
+          <article class="bento-card bento-card--strength" data-tilt>
+            <div class="washi-tape washi-tape--sky"></div>
+            <div class="bento-card__badge-row">
+              <span class="pill-chip pill-chip--sky">
+                <img src="assets/images/icons/icon-strength.svg" alt="" width="14" height="14" aria-hidden="true">
+                Key Strengths
+              </span>
+              <span class="bento-card__order">Pillar 01</span>
+            </div>
+            <h3 class="bento-card__title">Forethought Preparation &amp; Mindful Goal Setting</h3>
+            <p class="bento-card__text">Working through the guiding questions based on Zimmerman’s Self-Regulated Learning model after listening to "Wake Me Up When September Ends" helped me notice how I actually use Language Learning Strategies while speaking. One thing I think I did well was taking a moment to prepare my mind during the Forethought stage before talking. Setting a clear goal for what I wanted to share about the song and choosing strategies ahead of time, like calming my nerves and connecting the lyrics to vocabulary I already knew, helped me start the conversation feeling much more grounded.</p>
+            <div class="bento-card__footer">
+              <span class="bento-card__stamp">Self-Regulation</span>
+              <img src="assets/images/icons/icon-sparkle.svg" alt="" width="16" height="16" class="bento-card__sparkle" aria-hidden="true">
+            </div>
+          </article>
+
+          <!-- Pillar 2: Challenges -->
+          <article class="bento-card bento-card--challenge" data-tilt>
+            <div class="washi-tape washi-tape--honey"></div>
+            <div class="bento-card__badge-row">
+              <span class="pill-chip pill-chip--amber">
+                <img src="assets/images/icons/icon-challenge.svg" alt="" width="14" height="14" aria-hidden="true">
+                Growth Challenges
+              </span>
+              <span class="bento-card__order">Pillar 02</span>
+            </div>
+            <h3 class="bento-card__title">Performance Monitoring &amp; Compensation Delays</h3>
+            <p class="bento-card__text">However, there were a couple of things I did not handle as effectively. During the Performance stage, it was challenging to monitor my strategy use while simultaneously trying to speak smoothly about the song. At times, I hesitated when searching for the right words to express deeper ideas, and I did not switch to compensation strategies as quickly as I could have.</p>
+            <div class="bento-card__footer">
+              <span class="bento-card__stamp">Pedagogical Growth</span>
+              <img src="assets/images/icons/icon-sparkle.svg" alt="" width="16" height="16" class="bento-card__sparkle" aria-hidden="true">
+            </div>
+          </article>
+
+          <!-- Pillar 3: Action Plan -->
+          <article class="bento-card bento-card--action" data-tilt>
+            <div class="washi-tape washi-tape--mint"></div>
+            <div class="bento-card__badge-row">
+              <span class="pill-chip pill-chip--emerald">
+                <img src="assets/images/icons/icon-action.svg" alt="" width="14" height="14" aria-hidden="true">
+                Strategic Action Plan
+              </span>
+              <span class="bento-card__order">Pillar 03</span>
+            </div>
+            <h3 class="bento-card__title">Adaptation Training &amp; Post-Speaking Documentation</h3>
+            <p class="bento-card__text">To improve in future speaking tasks, I want to apply the Adaptation stage by training myself to use paraphrasing or simpler expressions right away whenever I forget a specific word. I also plan to take quick notes immediately after speaking so I can remember concrete moments when I changed or kept a strategy, making my self-evaluation much clearer and more useful for my growth as a future language teacher.</p>
+            <div class="bento-card__footer">
+              <span class="bento-card__stamp">Future Action</span>
+              <img src="assets/images/icons/icon-sparkle.svg" alt="" width="16" height="16" class="bento-card__sparkle" aria-hidden="true">
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Chococat Animated Academic Callout -->
+        <div class="chococat-character-callout">
+          <img src="assets/images/chococat-morning.gif" alt="Chococat Mindful" class="chococat-character-callout__gif">
+          <div class="chococat-character-callout__content">
+            <span class="chococat-character-callout__pill">Self-Regulation Cycle &bull; Module 04</span>
+            <p class="chococat-character-callout__text">Mastering the cyclical interplay between Forethought, Performance, and Self-Reflection.</p>
           </div>
         </div>
 
-        <!-- Reflective Stack (100% Exact Text) -->
-        <div class="reflection-stack content-block">
-          <article class="reflection-card">
-            <div class="reflection-card__header">
-              <span class="reflection-card__icon-bubble">
-                <img src="assets/images/icons/icon-strength.svg" alt="" width="18" height="18" aria-hidden="true">
-              </span>
-              <h3 class="reflection-card__title">Forethought Stage &amp; Psychological Preparation</h3>
-            </div>
-            <p class="reflection-card__text">Working through the guiding questions based on Zimmerman’s Self-Regulated Learning model after listening to "Wake Me Up When September Ends" helped me notice how I actually use Language Learning Strategies while speaking. One thing I think I did well was taking a moment to prepare my mind during the Forethought stage before talking. Setting a clear goal for what I wanted to share about the song and choosing strategies ahead of time, like calming my nerves and connecting the lyrics to vocabulary I already knew, helped me start the conversation feeling much more grounded.</p>
-          </article>
-
-          <article class="reflection-card reflection-card--warning">
-            <div class="reflection-card__header">
-              <span class="reflection-card__icon-bubble">
-                <img src="assets/images/icons/icon-challenge.svg" alt="" width="18" height="18" aria-hidden="true">
-              </span>
-              <h3 class="reflection-card__title">Performance Stage &amp; Real-Time Monitoring</h3>
-            </div>
-            <p class="reflection-card__text">However, there were a couple of things I did not handle as effectively. During the Performance stage, it was challenging to monitor my strategy use while simultaneously trying to speak smoothly about the song. At times, I hesitated when searching for the right words to express deeper ideas, and I did not switch to compensation strategies as quickly as I could have.</p>
-          </article>
-
-          <article class="reflection-card reflection-card--success">
-            <div class="reflection-card__header">
-              <span class="reflection-card__icon-bubble">
-                <img src="assets/images/icons/icon-action.svg" alt="" width="18" height="18" aria-hidden="true">
-              </span>
-              <h3 class="reflection-card__title">Adaptation &amp; Compensation Strategies</h3>
-            </div>
-            <p class="reflection-card__text">To improve in future speaking tasks, I want to apply the Adaptation stage by training myself to use paraphrasing or simpler expressions right away whenever I forget a specific word. I also plan to take quick notes immediately after speaking so I can remember concrete moments when I changed or kept a strategy, making my self-evaluation much clearer and more useful for my growth as a future language teacher.</p>
-          </article>
-        </div>
-
-        <!-- Cute Chococat Official Sticker Dialogue Banner -->
-        <div class="chococat-dialogue-banner">
-          <img src="assets/images/chococat-ranking-2024-clean.png" alt="Chococat Sticker" class="chococat-dialogue-banner__gif">
-          <div>
-            <span class="chococat-dialogue-banner__badge">Self-Regulation Cycle</span>
-            <span class="chococat-dialogue-banner__text">Forethought &bull; Performance &bull; Adaptive Fluency</span>
-          </div>
-        </div>
       </div>
     </section>
 
@@ -483,75 +652,134 @@
          ==================================================================== -->
     <section class="section" id="podcast" aria-labelledby="podcast-heading">
       <div class="container">
-        <div class="section__header">
-          <span class="section__pill">
-            <img src="assets/images/icons/nav-podcast.svg" alt="" width="15" height="15" aria-hidden="true">
+        
+        <div class="section-badge-header">
+          <div class="section-tag-pill">
+            <img src="assets/images/icons/nav-podcast.svg" alt="" width="16" height="16" aria-hidden="true">
             <span>Module 05 &bull; Collaborative Dialogue</span>
-          </span>
-          <h2 id="podcast-heading" class="section__title">podcast</h2>
-          <p class="section__desc">Episode 4: "From Theory to Practice" &bull; SRL &amp; Language Learning Strategies in Teaching Decisions.</p>
-        </div>
-
-        <!-- YouTube Player Card -->
-        <div class="player-card content-block">
-          <div class="player-card__video-box">
-            <iframe 
-              src="https://www.youtube.com/embed/e7HpSL6GKQ8" 
-              title="Podcast Episode 4 - From Theory to Practice" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-              allowfullscreen>
-            </iframe>
           </div>
-          <div class="player-card__footer">
-            <span class="player-card__title">Podcast Episode 4: "From Theory to Practice" (SRL &amp; Teaching Decisions)</span>
-            <a href="https://youtu.be/e7HpSL6GKQ8?si=a5-xdVSNgmgXPsgw" target="_blank" rel="noopener noreferrer" class="btn btn--secondary">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-              <span>Watch on YouTube</span>
-            </a>
-          </div>
+          <h2 id="podcast-heading" class="section-main-title">podcast</h2>
+          <p class="section-lead-desc">Episode 4: "From Theory to Practice" &bull; SRL &amp; Language Learning Strategies in Teaching Decisions.</p>
         </div>
 
-        <!-- Reflective Stack (100% Exact Text) -->
-        <div class="reflection-stack content-block">
-          <article class="reflection-card">
-            <div class="reflection-card__header">
-              <span class="reflection-card__icon-bubble">
-                <img src="assets/images/icons/icon-strength.svg" alt="" width="18" height="18" aria-hidden="true">
-              </span>
-              <h3 class="reflection-card__title">Structured Academic Argumentation</h3>
+        <!-- Studio Cinema Video & Soundwave Visualizer Card -->
+        <div class="studio-cinema-wrapper" data-tilt>
+          <div class="studio-cinema-glow"></div>
+          
+          <div class="studio-cinema-frame">
+            <!-- macOS Window Header Bar -->
+            <div class="studio-cinema-header">
+              <div class="mac-window-dots">
+                <span class="mac-dot mac-dot--red"></span>
+                <span class="mac-dot mac-dot--yellow"></span>
+                <span class="mac-dot mac-dot--green"></span>
+              </div>
+              <div class="studio-cinema-header__title">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line></svg>
+                <span>podcast_episode4_theory_to_practice.mp4</span>
+              </div>
+              <div class="soundwave-mini" aria-label="Equalizer">
+                <span class="eq-bar"></span>
+                <span class="eq-bar"></span>
+                <span class="eq-bar"></span>
+                <span class="eq-bar"></span>
+                <span class="eq-bar"></span>
+              </div>
             </div>
-            <p class="reflection-card__text">Recording Episode 4 of our podcast, "From Theory to Practice," helped me connect Self-Regulated Learning (SRL) and Language Learning Strategies directly to everyday teaching decisions. What my group and I did really well was organizing the academic content clearly and logically. We explained how teachers can explicitly model strategies, such as using mental imagery or word grouping for vocabulary, guide students through planning, monitoring, and self-reflection, and adapt their support to the local classroom context rather than following generic programs blindly. Laying out the roles of both teachers and learners in a structured way made the theoretical ideas easy to follow.</p>
-          </article>
 
-          <article class="reflection-card reflection-card--warning">
-            <div class="reflection-card__header">
-              <span class="reflection-card__icon-bubble">
-                <img src="assets/images/icons/icon-challenge.svg" alt="" width="18" height="18" aria-hidden="true">
-              </span>
-              <h3 class="reflection-card__title">Audio Engineering &amp; Dialogue Dynamics</h3>
+            <!-- YouTube Video Embed -->
+            <div class="studio-cinema-screen">
+              <iframe 
+                src="https://www.youtube.com/embed/e7HpSL6GKQ8" 
+                title="Podcast Episode 4 - From Theory to Practice" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen 
+                loading="lazy">
+              </iframe>
             </div>
-            <p class="reflection-card__text">However, there were a couple of technical and format details we did not handle as well. Because our group had to split into two subgroups of three and record separately, my subgroup’s section ended up having noticeably poor audio quality. In addition, the format felt quite flat since we simply recorded ourselves talking in front of the camera, which made the episode feel more like a plain presentation than a lively podcast conversation.</p>
-          </article>
 
-          <article class="reflection-card reflection-card--success">
-            <div class="reflection-card__header">
-              <span class="reflection-card__icon-bubble">
-                <img src="assets/images/icons/icon-action.svg" alt="" width="18" height="18" aria-hidden="true">
-              </span>
-              <h3 class="reflection-card__title">Authentic Conversation &amp; Production Protocol</h3>
+            <!-- Cinema Bottom Bar -->
+            <div class="studio-cinema-footer">
+              <div class="studio-cinema-footer__info">
+                <span class="studio-cinema-footer__heading">Podcast Episode 4: "From Theory to Practice"</span>
+                <span class="studio-cinema-footer__sub">Connecting SRL, explicit strategy modeling, and local classroom adaptation</span>
+              </div>
+              <a href="https://youtu.be/e7HpSL6GKQ8?si=a5-xdVSNgmgXPsgw" target="_blank" rel="noopener noreferrer" class="btn-action btn-action--primary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                <span>Watch on YouTube</span>
+              </a>
             </div>
-            <p class="reflection-card__text">For future projects, I would plan ahead with my group so we can either record together in a quiet place or test our microphones beforehand to keep the audio clear and consistent. I would also focus on making the discussion feel like a genuine conversation, reacting to each other's points and sharing short classroom scenarios, rather than simply talking straight into the camera.</p>
-          </article>
-        </div>
-
-        <!-- Cute Chococat Animated GIF Dialogue Banner -->
-        <div class="chococat-dialogue-banner">
-          <img src="assets/images/chococat-cute-waving.gif" alt="Chococat Waving" class="chococat-dialogue-banner__gif">
-          <div>
-            <span class="chococat-dialogue-banner__badge">Collaborative Dialogue</span>
-            <span class="chococat-dialogue-banner__text">Connecting Self-Regulated Learning to classroom pedagogy</span>
           </div>
         </div>
+
+        <!-- 3-Column FreeFrontend Bento Reflection Deck (100% Exact Text) -->
+        <div class="bento-deck">
+          
+          <!-- Pillar 1: Strengths -->
+          <article class="bento-card bento-card--strength" data-tilt>
+            <div class="washi-tape washi-tape--sky"></div>
+            <div class="bento-card__badge-row">
+              <span class="pill-chip pill-chip--sky">
+                <img src="assets/images/icons/icon-strength.svg" alt="" width="14" height="14" aria-hidden="true">
+                Key Strengths
+              </span>
+              <span class="bento-card__order">Pillar 01</span>
+            </div>
+            <h3 class="bento-card__title">Structured Academic Argumentation</h3>
+            <p class="bento-card__text">Recording Episode 4 of our podcast, "From Theory to Practice," helped me connect Self-Regulated Learning (SRL) and Language Learning Strategies directly to everyday teaching decisions. What my group and I did really well was organizing the academic content clearly and logically. We explained how teachers can explicitly model strategies, such as using mental imagery or word grouping for vocabulary, guide students through planning, monitoring, and self-reflection, and adapt their support to the local classroom context rather than following generic programs blindly. Laying out the roles of both teachers and learners in a structured way made the theoretical ideas easy to follow.</p>
+            <div class="bento-card__footer">
+              <span class="bento-card__stamp">Content Coherence</span>
+              <img src="assets/images/icons/icon-sparkle.svg" alt="" width="16" height="16" class="bento-card__sparkle" aria-hidden="true">
+            </div>
+          </article>
+
+          <!-- Pillar 2: Challenges -->
+          <article class="bento-card bento-card--challenge" data-tilt>
+            <div class="washi-tape washi-tape--honey"></div>
+            <div class="bento-card__badge-row">
+              <span class="pill-chip pill-chip--amber">
+                <img src="assets/images/icons/icon-challenge.svg" alt="" width="14" height="14" aria-hidden="true">
+                Growth Challenges
+              </span>
+              <span class="bento-card__order">Pillar 02</span>
+            </div>
+            <h3 class="bento-card__title">Audio Split-Recording &amp; Presentation Stiffness</h3>
+            <p class="bento-card__text">However, there were a couple of technical and format details we did not handle as well. Because our group had to split into two subgroups of three and record separately, my subgroup’s section ended up having noticeably poor audio quality. In addition, the format felt quite flat since we simply recorded ourselves talking in front of the camera, which made the episode feel more like a plain presentation than a lively podcast conversation.</p>
+            <div class="bento-card__footer">
+              <span class="bento-card__stamp">Pedagogical Growth</span>
+              <img src="assets/images/icons/icon-sparkle.svg" alt="" width="16" height="16" class="bento-card__sparkle" aria-hidden="true">
+            </div>
+          </article>
+
+          <!-- Pillar 3: Action Plan -->
+          <article class="bento-card bento-card--action" data-tilt>
+            <div class="washi-tape washi-tape--mint"></div>
+            <div class="bento-card__badge-row">
+              <span class="pill-chip pill-chip--emerald">
+                <img src="assets/images/icons/icon-action.svg" alt="" width="14" height="14" aria-hidden="true">
+                Strategic Action Plan
+              </span>
+              <span class="bento-card__order">Pillar 03</span>
+            </div>
+            <h3 class="bento-card__title">Acoustic Testing &amp; Authentic Conversational Dynamics</h3>
+            <p class="bento-card__text">For future projects, I would plan ahead with my group so we can either record together in a quiet place or test our microphones beforehand to keep the audio clear and consistent. I would also focus on making the discussion feel like a genuine conversation, reacting to each other's points and sharing short classroom scenarios, rather than simply talking straight into the camera.</p>
+            <div class="bento-card__footer">
+              <span class="bento-card__stamp">Future Action</span>
+              <img src="assets/images/icons/icon-sparkle.svg" alt="" width="16" height="16" class="bento-card__sparkle" aria-hidden="true">
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Chococat Animated Academic Callout -->
+        <div class="chococat-character-callout">
+          <img src="assets/images/chococat-dancing.gif" alt="Chococat Dancing" class="chococat-character-callout__gif">
+          <div class="chococat-character-callout__content">
+            <span class="chococat-character-callout__pill">Collaborative Podcast &bull; Module 05</span>
+            <p class="chococat-character-callout__text">Transforming abstract learning theories into actionable teaching decisions through authentic peer dialogue.</p>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -560,112 +788,167 @@
          ==================================================================== -->
     <section class="section section--alt" id="lesson-plan" aria-labelledby="lesson-heading">
       <div class="container">
-        <div class="section__header">
-          <span class="section__pill">
-            <img src="assets/images/icons/nav-lesson.svg" alt="" width="15" height="15" aria-hidden="true">
-            <span>Module 06 &bull; Pedagogical Implementation</span>
-          </span>
-          <h2 id="lesson-heading" class="section__title">lesson plan</h2>
-          <p class="section__desc">Task-Based Language Teaching (TBLT) Design: Meaningful Memories, Past Tense, and Affective Regulation.</p>
+        
+        <div class="section-badge-header">
+          <div class="section-tag-pill">
+            <img src="assets/images/icons/nav-lesson.svg" alt="" width="16" height="16" aria-hidden="true">
+            <span>Module 06 &bull; Pedagogical Design</span>
+          </div>
+          <h2 id="lesson-heading" class="section-main-title">lesson plan</h2>
+          <p class="section-lead-desc">Scaffolded Communicative Lesson Plan with Integrated Metacognitive Strategies for 10th-Grade English.</p>
         </div>
 
-        <!-- Document Vault Card (Lesson Plan DOCX & PDF) with Action Buttons -->
-        <div class="vault-card content-block">
-          <div class="vault-card__top">
-            <div class="vault-card__icon-box">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
-            </div>
-            <div class="vault-card__info">
-              <h3 class="vault-card__title">Lesson Plan Model for TBLT Class Implementation</h3>
-              <p class="vault-card__meta">Teachers: María Alejandra Acosta, Ángela Tatiana Caicedo, Alexandra Narváez, William Daniel Timaná &bull; Level B1 &bull; 50 Mins</p>
-            </div>
+        <!-- Academic Document Folder Card -->
+        <div class="folder-document-card" data-tilt>
+          <div class="folder-document-card__tab">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+            <span>Verified Curricular Document &bull; Full Lesson Plan</span>
           </div>
 
-          <div class="vault-card__actions">
-            <button class="btn btn--primary" data-doc-view="assets/documents/Lesson-Plan-LLS.pdf" data-doc-title="Lesson Plan Model for TBLT Class Implementation">
-              <img src="assets/images/icons/icon-preview.svg" alt="" width="16" height="16" aria-hidden="true">
-              <span>Open &amp; View</span>
-            </button>
-            <a href="assets/documents/Lesson-Plan-LLS.pdf" download="Lesson-Plan-LLS.pdf" class="btn btn--secondary">
-              <img src="assets/images/icons/icon-download.svg" alt="" width="16" height="16" aria-hidden="true">
-              <span>Download PDF</span>
-            </a>
-            <a href="assets/documents/Lesson-Plan-LLS.docx" download="Lesson-Plan-LLS.docx" class="btn btn--outline">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
-              <span>Download Word (.docx)</span>
-            </a>
-            <button class="btn btn--outline" data-quick-preview-target="lp-quick-embed">
-              <span>Quick Preview</span>
-            </button>
-          </div>
+          <div class="folder-document-card__body">
+            <div class="folder-document-card__header-row">
+              <div class="folder-document-card__icon-wrap">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0284c7" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+              </div>
+              <div>
+                <h3 class="folder-document-card__title">Lesson Plan: Communicative Conditional Clauses</h3>
+                <p class="folder-document-card__meta">Scaffolded 45-Minute Lesson Plan &bull; 10th-Grade English Class</p>
+              </div>
+            </div>
 
-          <div id="lp-quick-embed" class="vault-card__preview-embed">
-            <iframe class="vault-card__iframe" src="assets/documents/Lesson-Plan-LLS.pdf" title="Lesson Plan Preview"></iframe>
+            <div class="folder-document-card__tags">
+              <span class="pill-chip pill-chip--neutral">DOCX &amp; PDF</span>
+              <span class="pill-chip pill-chip--neutral">10th Grade English</span>
+              <span class="pill-chip pill-chip--emerald">Metacognitive Scaffolding</span>
+              <span class="pill-chip pill-chip--sky">Memory Circles</span>
+            </div>
+
+            <!-- Interactive In-Card Document Previewer (Toggled via JS) -->
+            <div class="folder-document-card__inline-viewer" id="lesson-inline-viewer" style="display: none;">
+              <iframe src="assets/documents/Lesson-Plan-LLS.pdf" title="Embedded Lesson Plan PDF Viewer" loading="lazy"></iframe>
+            </div>
+
+            <div class="folder-document-card__actions">
+              <button class="btn-action btn-action--primary doc-preview-trigger" data-pdf="assets/documents/Lesson-Plan-LLS.pdf" data-title="Lesson Plan - Communicative Conditional Clauses">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                <span>Fullscreen View</span>
+              </button>
+              <button class="btn-action btn-action--secondary inline-toggle-btn" data-target="lesson-inline-viewer">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line></svg>
+                <span>In-Page Preview</span>
+              </button>
+              <a href="assets/documents/Lesson-Plan-LLS.docx" download class="btn-action btn-action--tertiary">
+                <img src="assets/images/icons/icon-download.svg" alt="" width="16" height="16" aria-hidden="true">
+                <span>Download DOCX</span>
+              </a>
+              <a href="assets/documents/Lesson-Plan-LLS.pdf" download class="btn-action btn-action--tertiary">
+                <img src="assets/images/icons/icon-download.svg" alt="" width="16" height="16" aria-hidden="true">
+                <span>Download PDF</span>
+              </a>
+            </div>
           </div>
         </div>
 
-        <!-- Reflective Stack (100% Exact Text) -->
-        <div class="reflection-stack content-block">
-          <article class="reflection-card">
-            <div class="reflection-card__header">
-              <span class="reflection-card__icon-bubble">
-                <img src="assets/images/icons/icon-strength.svg" alt="" width="18" height="18" aria-hidden="true">
+        <!-- 3-Column FreeFrontend Bento Reflection Deck (100% Exact Text) -->
+        <div class="bento-deck">
+          
+          <!-- Pillar 1: Strengths -->
+          <article class="bento-card bento-card--strength" data-tilt>
+            <div class="washi-tape washi-tape--sky"></div>
+            <div class="bento-card__badge-row">
+              <span class="pill-chip pill-chip--sky">
+                <img src="assets/images/icons/icon-strength.svg" alt="" width="14" height="14" aria-hidden="true">
+                Key Strengths
               </span>
-              <h3 class="reflection-card__title">Affective Atmosphere &amp; Memory Circles</h3>
+              <span class="bento-card__order">Pillar 01</span>
             </div>
-            <p class="reflection-card__text">What I think my group and I did best was creating a warm, low-stress atmosphere right from the start. Beginning with the "nervous thermometer," a quick breathing reset, and our own imperfect story from the Memory Box helped our classmates relax and see that making mistakes was completely normal. Setting up the "Memory Circles" with rotating role and adding a short mid-task checklist pause also worked nicely because it kept everyone supportive and gave speakers a clear moment to check in with themselves and adjust before the second round.</p>
+            <h3 class="bento-card__title">Low-Stress Climate &amp; Memory Circle Dynamics</h3>
+            <p class="bento-card__text">What I think my group and I did best was creating a warm, low-stress atmosphere right from the start. Beginning with the "nervous thermometer," a quick breathing reset, and our own imperfect story from the Memory Box helped our classmates relax and see that making mistakes was completely normal. Setting up the "Memory Circles" with rotating role and adding a short mid-task checklist pause also worked nicely because it kept everyone supportive and gave speakers a clear moment to check in with themselves and adjust before the second round.</p>
+            <div class="bento-card__footer">
+              <span class="bento-card__stamp">Pedagogical Climate</span>
+              <img src="assets/images/icons/icon-sparkle.svg" alt="" width="16" height="16" class="bento-card__sparkle" aria-hidden="true">
+            </div>
           </article>
 
-          <article class="reflection-card reflection-card--warning">
-            <div class="reflection-card__header">
-              <span class="reflection-card__icon-bubble">
-                <img src="assets/images/icons/icon-challenge.svg" alt="" width="18" height="18" aria-hidden="true">
+          <!-- Pillar 2: Challenges -->
+          <article class="bento-card bento-card--challenge" data-tilt>
+            <div class="washi-tape washi-tape--honey"></div>
+            <div class="bento-card__badge-row">
+              <span class="pill-chip pill-chip--amber">
+                <img src="assets/images/icons/icon-challenge.svg" alt="" width="14" height="14" aria-hidden="true">
+                Growth Challenges
               </span>
-              <h3 class="reflection-card__title">Time Management &amp; Task Density</h3>
+              <span class="bento-card__order">Pillar 02</span>
             </div>
-            <p class="reflection-card__text">At the same time,carrying out so many steps within a single 45 minute session brought a few challenges.Moving from the warm-up and five-keyword planning into two speaking rounds, the self-monitoring pause, and the Padlet activity meant we had to watch the clock constantly, which left the final Self-Reflection stage feeling a bit rushed.</p>
+            <h3 class="bento-card__title">Time Tightness &amp; Reflection Rush</h3>
+            <p class="bento-card__text">At the same time,carrying out so many steps within a single 45 minute session brought a few challenges.Moving from the warm-up and five-keyword planning into two speaking rounds, the self-monitoring pause, and the Padlet activity meant we had to watch the clock constantly, which left the final Self-Reflection stage feeling a bit rushed.</p>
+            <div class="bento-card__footer">
+              <span class="bento-card__stamp">Pedagogical Growth</span>
+              <img src="assets/images/icons/icon-sparkle.svg" alt="" width="16" height="16" class="bento-card__sparkle" aria-hidden="true">
+            </div>
           </article>
 
-          <article class="reflection-card reflection-card--success">
-            <div class="reflection-card__header">
-              <span class="reflection-card__icon-bubble">
-                <img src="assets/images/icons/icon-action.svg" alt="" width="18" height="18" aria-hidden="true">
+          <!-- Pillar 3: Action Plan -->
+          <article class="bento-card bento-card--action" data-tilt>
+            <div class="washi-tape washi-tape--mint"></div>
+            <div class="bento-card__badge-row">
+              <span class="pill-chip pill-chip--emerald">
+                <img src="assets/images/icons/icon-action.svg" alt="" width="14" height="14" aria-hidden="true">
+                Strategic Action Plan
               </span>
-              <h3 class="reflection-card__title">Streamlined Transitions &amp; Emotional Reassurance</h3>
+              <span class="bento-card__order">Pillar 03</span>
             </div>
-            <p class="reflection-card__text">Next time I teach a lesson like this, I would simplify some of the transitions so we can save a few extra minutes at the end for students to write their Padlet reflections and reply to their peers calmly. I would also take a brief moment before the first speaking round to reassure students that pausing or stumbling over a past verb is part of the process, helping them trust their affective strategies and focus on sharing their memory rather than trying to sound perfect.</p>
+            <h3 class="bento-card__title">Streamlined Transitions &amp; Affective Reassurance</h3>
+            <p class="bento-card__text">Next time I teach a lesson like this, I would simplify some of the transitions so we can save a few extra minutes at the end for students to write their Padlet reflections and reply to their peers calmly. I would also take a brief moment before the first speaking round to reassure students that pausing or stumbling over a past verb is part of the process, helping them trust their affective strategies and focus on sharing their memory rather than trying to sound perfect.</p>
+            <div class="bento-card__footer">
+              <span class="bento-card__stamp">Future Action</span>
+              <img src="assets/images/icons/icon-sparkle.svg" alt="" width="16" height="16" class="bento-card__sparkle" aria-hidden="true">
+            </div>
           </article>
+
         </div>
 
-        <!-- Cute Chococat Animated GIF Dialogue Banner -->
-        <div class="chococat-dialogue-banner">
-          <img src="assets/images/chococat-happy.gif" alt="Chococat Happy" class="chococat-dialogue-banner__gif">
-          <div>
-            <span class="chococat-dialogue-banner__badge">Empowering Pedagogy</span>
-            <span class="chococat-dialogue-banner__text">Designing supportive language experiences where students thrive</span>
+        <!-- Chococat Animated Academic Callout -->
+        <div class="chococat-character-callout">
+          <img src="assets/images/chococat-ranking-2021-clean.png" alt="Chococat Teacher" class="chococat-character-callout__gif floating-bob">
+          <div class="chococat-character-callout__content">
+            <span class="chococat-character-callout__pill">Lesson Design &bull; Module 06</span>
+            <p class="chococat-character-callout__text">Fostering communicative fluency through safe, scaffolded practice and affective error-tolerance.</p>
           </div>
         </div>
+
       </div>
     </section>
+
   </main>
 
   <!-- ======================================================================
-       Academic Footer
+       Academic Portfolio Footer
        ====================================================================== -->
   <footer class="footer">
-    <div class="container footer__inner">
-      <img src="assets/images/chococat-sanrio-standing-clean.png" alt="Chococat Sanrio" class="footer__chococat">
-      <h2 class="footer__title">Portfolio L.L.S</h2>
-      <p class="footer__author">María Alejandra Acosta &bull; Academic Portfolio</p>
-      <p class="footer__academic-note">Bachelor's Degree in Spanish and English Teaching &bull; Language Learning Strategies Course<br>Universidad de Nariño &bull; San Juan de Pasto, Colombia</p>
-      <div class="footer__copyright">
-        &copy; 2026 María Alejandra Acosta. Designed with Sanrio Chococat aesthetic and Apple Human Interface principles.
+    <div class="container footer__container">
+      <div class="footer__brand-group">
+        <img src="assets/images/chococat-head.svg" alt="" width="32" height="32" class="footer__logo-img" aria-hidden="true">
+        <div>
+          <h3 class="footer__title">María Alejandra Acosta</h3>
+          <p class="footer__sub">Portfolio L.L.S &bull; Language Learning Strategies</p>
+        </div>
+      </div>
+
+      <div class="footer__meta-info">
+        <p>Bachelor's Degree in Spanish &amp; English Teaching &bull; 7th Semester</p>
+        <p>Universidad de Nariño &bull; San Juan de Pasto, Colombia</p>
+      </div>
+
+      <div class="footer__chococat-seal">
+        <img src="assets/images/chococat-happy.gif" alt="Happy Chococat" width="54" height="54">
+        <span>Chococat Academic Companion</span>
       </div>
     </div>
   </footer>
 
   <!-- ======================================================================
-       Lightbox Modal (RULE 4 COMPLIANT)
+       Apple-Style Image Lightbox Viewer Modal
        ====================================================================== -->
   <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image Lightbox Viewer">
     <div class="lightbox__stage">
@@ -684,18 +967,19 @@
   </div>
 
   <!-- ======================================================================
-       PDF Document Modal Viewer
+       PDF Fullscreen Document Modal Viewer
        ====================================================================== -->
   <div class="doc-modal" id="doc-modal" role="dialog" aria-modal="true" aria-label="PDF Document Viewer">
     <div class="doc-modal__container">
       <div class="doc-modal__header">
         <div class="doc-modal__title-group">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4299E1" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0284c7" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
           <h3 class="doc-modal__title" id="doc-modal-title">Document Viewer</h3>
         </div>
         <div class="doc-modal__actions">
-          <a href="#" id="doc-modal-download" download class="btn btn--primary" style="padding: 6px 18px; font-size: 0.85rem;">
-            Download
+          <a href="#" id="doc-modal-download" download class="btn-action btn-action--primary">
+            <img src="assets/images/icons/icon-download.svg" alt="" width="16" height="16" aria-hidden="true">
+            <span>Download</span>
           </a>
           <button class="doc-modal__close-btn" id="doc-modal-close" aria-label="Close document viewer">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
@@ -709,13 +993,12 @@
   </div>
 
   <!-- ======================================================================
-       Scroll to Top Floating Button
+       Floating Back to Top Button
        ====================================================================== -->
-  <button class="scroll-top" id="scroll-top-btn" aria-label="Scroll back to top">
-    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+  <button class="scroll-top-btn" id="scroll-top-btn" aria-label="Back to top of page">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"></polyline></svg>
   </button>
 
-  <!-- JavaScript -->
   <script src="assets/js/main.js"></script>
 </body>
 </html>

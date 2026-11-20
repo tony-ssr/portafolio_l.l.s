@@ -1,15 +1,53 @@
 /**
  * PORTAFOLIO L.L.S | MARÍA ALEJANDRA ACOSTA
- * Interactivity: Glassmorphic Navbar, Scroll-Spy, Lightbox Image Viewer, Document PDF Modal, and Microinteractions.
+ * Interactivity: 3D Tilt Cards, Glassmorphism Navbar, Lightbox Gallery, Document Modal, and In-Page Viewers.
  */
 
 document.addEventListener('DOMContentLoaded', () => {
   // ------------------------------------------------------------------------
-  // 1. Navbar Glassmorphism on Scroll & Scroll Spy
+  // 1. Interactive 3D Tilt Effect (FreeFrontend & Apple HIG)
+  // ------------------------------------------------------------------------
+  const isFinePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+  const isReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  if (isFinePointer && !isReducedMotion) {
+    const tiltElements = document.querySelectorAll('[data-tilt]');
+
+    tiltElements.forEach(el => {
+      let isHovered = false;
+
+      el.addEventListener('mouseenter', () => {
+        isHovered = true;
+      });
+
+      el.addEventListener('mousemove', (e) => {
+        if (!isHovered) return;
+        const rect = el.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+
+        const rotateX = ((y - centerY) / centerY) * -6; // Max 6 deg
+        const rotateY = ((x - centerX) / centerX) * 6;  // Max 6 deg
+
+        el.style.transform = `perspective(1000px) rotateX(${rotateX.toFixed(2)}deg) rotateY(${rotateY.toFixed(2)}deg) translateY(-4px)`;
+      });
+
+      el.addEventListener('mouseleave', () => {
+        isHovered = false;
+        el.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0px)';
+      });
+    });
+  }
+
+  // ------------------------------------------------------------------------
+  // 2. Navbar Glassmorphism on Scroll & Scroll-Spy
   // ------------------------------------------------------------------------
   const navbar = document.getElementById('navbar');
   const navItems = document.querySelectorAll('.navbar__item');
-  const sections = document.querySelectorAll('section[id], header[id]');
+  const sections = document.querySelectorAll('section[id], section.hero-section[id]');
   const mobileToggle = document.getElementById('navbar-toggle');
   const navMenu = document.getElementById('navbar-menu');
 
@@ -22,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Scroll-Spy detection
     let currentId = '';
-    const scrollPos = window.scrollY + 140;
+    const scrollPos = window.scrollY + 160;
 
     sections.forEach(sec => {
       const top = sec.offsetTop;
@@ -32,16 +70,18 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    navItems.forEach(item => {
-      item.classList.remove('active');
-      if (item.getAttribute('href') === `#${currentId}`) {
-        item.classList.add('active');
-      }
-    });
+    if (currentId) {
+      navItems.forEach(item => {
+        item.classList.remove('active');
+        if (item.getAttribute('href') === `#${currentId}`) {
+          item.classList.add('active');
+        }
+      });
+    }
   });
 
   // ------------------------------------------------------------------------
-  // 2. Mobile Menu Toggle
+  // 3. Mobile Navigation Menu Toggle
   // ------------------------------------------------------------------------
   if (mobileToggle && navMenu) {
     mobileToggle.addEventListener('click', () => {
@@ -60,7 +100,159 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ------------------------------------------------------------------------
-  // 3. Scroll to Top Button
+  // 4. In-Page Inline Document Preview Toggles
+  // ------------------------------------------------------------------------
+  const inlineToggles = document.querySelectorAll('.inline-toggle-btn');
+  inlineToggles.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const targetId = btn.getAttribute('data-target');
+      const targetViewer = document.getElementById(targetId);
+      if (targetViewer) {
+        const isHidden = targetViewer.style.display === 'none' || targetViewer.style.display === '';
+        targetViewer.style.display = isHidden ? 'block' : 'none';
+        const spanText = btn.querySelector('span');
+        if (spanText) {
+          spanText.textContent = isHidden ? 'Hide Preview' : 'In-Page Preview';
+        }
+      }
+    });
+  });
+
+  // ------------------------------------------------------------------------
+  // 5. Fullscreen PDF Document Modal Viewer
+  // ------------------------------------------------------------------------
+  const docModal = document.getElementById('doc-modal');
+  const docModalTitle = document.getElementById('doc-modal-title');
+  const docModalIframe = document.getElementById('doc-modal-iframe');
+  const docModalDownload = document.getElementById('doc-modal-download');
+  const docModalClose = document.getElementById('doc-modal-close');
+  const docTriggers = document.querySelectorAll('.doc-preview-trigger');
+
+  function openDocModal(pdfUrl, title) {
+    if (!docModal || !docModalIframe) return;
+    docModalTitle.textContent = title;
+    docModalIframe.src = pdfUrl;
+    docModalDownload.setAttribute('href', pdfUrl);
+    docModal.classList.add('is-open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeDocModal() {
+    if (!docModal || !docModalIframe) return;
+    docModal.classList.remove('is-open');
+    docModalIframe.src = '';
+    document.body.style.overflow = '';
+  }
+
+  docTriggers.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const pdf = btn.getAttribute('data-pdf');
+      const title = btn.getAttribute('data-title') || 'Document Viewer';
+      openDocModal(pdf, title);
+    });
+  });
+
+  if (docModalClose) {
+    docModalClose.addEventListener('click', closeDocModal);
+  }
+
+  if (docModal) {
+    docModal.addEventListener('click', (e) => {
+      if (e.target === docModal) closeDocModal();
+    });
+  }
+
+  // ------------------------------------------------------------------------
+  // 6. Apple-Style Image Lightbox Gallery
+  // ------------------------------------------------------------------------
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const lightboxCaption = document.getElementById('lightbox-caption');
+  const lightboxClose = document.getElementById('lightbox-close');
+  const lightboxPrev = document.getElementById('lightbox-prev');
+  const lightboxNext = document.getElementById('lightbox-next');
+
+  const galleryItems = [
+    {
+      src: 'assets/images/infografia-oxford-lls.jpg',
+      caption: 'Infographic: Rebecca Oxford’s Language Learning Strategies'
+    },
+    {
+      src: 'assets/images/sill-profile-graph.jpg',
+      caption: 'Diagnostic Breakdown: Strategy Inventory for Language Learning (SILL)'
+    },
+    {
+      src: 'assets/images/zimmerman-model-reflection.jpg',
+      caption: 'Zimmerman’s Cyclical Self-Regulation Model Reflection Sheet'
+    }
+  ];
+
+  let currentGalleryIndex = 0;
+
+  function openLightbox(index) {
+    currentGalleryIndex = index;
+    const item = galleryItems[index];
+    lightboxImg.src = item.src;
+    lightboxImg.alt = item.caption;
+    lightboxCaption.textContent = item.caption;
+    lightbox.classList.add('is-open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox() {
+    lightbox.classList.remove('is-open');
+    lightboxImg.src = '';
+    document.body.style.overflow = '';
+  }
+
+  function nextGalleryItem() {
+    currentGalleryIndex = (currentGalleryIndex + 1) % galleryItems.length;
+    openLightbox(currentGalleryIndex);
+  }
+
+  function prevGalleryItem() {
+    currentGalleryIndex = (currentGalleryIndex - 1 + galleryItems.length) % galleryItems.length;
+    openLightbox(currentGalleryIndex);
+  }
+
+  document.querySelectorAll('[data-lightbox-index]').forEach(box => {
+    box.addEventListener('click', () => {
+      const idx = parseInt(box.getAttribute('data-lightbox-index'), 10);
+      openLightbox(idx);
+    });
+    box.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        const idx = parseInt(box.getAttribute('data-lightbox-index'), 10);
+        openLightbox(idx);
+      }
+    });
+  });
+
+  if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
+  if (lightboxNext) lightboxNext.addEventListener('click', nextGalleryItem);
+  if (lightboxPrev) lightboxPrev.addEventListener('click', prevGalleryItem);
+
+  if (lightbox) {
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) closeLightbox();
+    });
+  }
+
+  // Keyboard Navigation for Modals
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      if (lightbox && lightbox.classList.contains('is-open')) closeLightbox();
+      if (docModal && docModal.classList.contains('is-open')) closeDocModal();
+    }
+    if (lightbox && lightbox.classList.contains('is-open')) {
+      if (e.key === 'ArrowRight') nextGalleryItem();
+      if (e.key === 'ArrowLeft') prevGalleryItem();
+    }
+  });
+
+  // ------------------------------------------------------------------------
+  // 7. Scroll to Top Floating Button
   // ------------------------------------------------------------------------
   const scrollTopBtn = document.getElementById('scroll-top-btn');
   if (scrollTopBtn) {
@@ -79,168 +271,4 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
-
-  // ------------------------------------------------------------------------
-  // 4. Lightbox Modal Gallery (RULE 4 COMPLIANT)
-  // Controls strictly float INSIDE image container with sharp drop shadows
-  // ------------------------------------------------------------------------
-  const lightbox = document.getElementById('lightbox');
-  const lightboxImg = document.getElementById('lightbox-img');
-  const lightboxCaption = document.getElementById('lightbox-caption');
-  const lightboxClose = document.getElementById('lightbox-close');
-  const lightboxPrev = document.getElementById('lightbox-prev');
-  const lightboxNext = document.getElementById('lightbox-next');
-
-  // Gallery items index
-  const galleryItems = [
-    {
-      src: 'assets/images/infografia-oxford-lls.jpg',
-      caption: 'Infographic: Rebecca Oxford’s Language Learning Strategies (Memory, Cognitive & Social)'
-    },
-    {
-      src: 'assets/images/sill-profile-graph.jpg',
-      caption: 'SILL Profile & Strategic Averages: Strategy Inventory for Language Learning'
-    },
-    {
-      src: 'assets/images/zimmerman-model-reflection.jpg',
-      caption: 'Zimmerman Self-Regulated Learning Model: Guiding Questions & Song Reflection'
-    }
-  ];
-
-  let currentGalleryIndex = 0;
-
-  function updateLightbox() {
-    const item = galleryItems[currentGalleryIndex];
-    if (!item) return;
-    lightboxImg.src = item.src;
-    lightboxImg.alt = item.caption;
-    lightboxCaption.textContent = item.caption;
-  }
-
-  function openLightbox(index) {
-    currentGalleryIndex = index;
-    updateLightbox();
-    lightbox.classList.add('is-open');
-    document.body.style.overflow = 'hidden';
-    lightboxClose.focus();
-  }
-
-  function closeLightbox() {
-    lightbox.classList.remove('is-open');
-    document.body.style.overflow = '';
-  }
-
-  function showNextImage() {
-    currentGalleryIndex = (currentGalleryIndex + 1) % galleryItems.length;
-    updateLightbox();
-  }
-
-  function showPrevImage() {
-    currentGalleryIndex = (currentGalleryIndex - 1 + galleryItems.length) % galleryItems.length;
-    updateLightbox();
-  }
-
-  // Event triggers for images
-  const lightboxTriggers = document.querySelectorAll('[data-lightbox-index]');
-  lightboxTriggers.forEach(trigger => {
-    trigger.addEventListener('click', (e) => {
-      e.preventDefault();
-      const idx = parseInt(trigger.getAttribute('data-lightbox-index'), 10);
-      openLightbox(idx);
-    });
-  });
-
-  if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
-  if (lightboxNext) lightboxNext.addEventListener('click', showNextImage);
-  if (lightboxPrev) lightboxPrev.addEventListener('click', showPrevImage);
-
-  if (lightbox) {
-    lightbox.addEventListener('click', (e) => {
-      if (e.target === lightbox) {
-        closeLightbox();
-      }
-    });
-  }
-
-  // ------------------------------------------------------------------------
-  // 5. Document PDF Modal Viewer
-  // ------------------------------------------------------------------------
-  const docModal = document.getElementById('doc-modal');
-  const docModalTitle = document.getElementById('doc-modal-title');
-  const docModalIframe = document.getElementById('doc-modal-iframe');
-  const docModalClose = document.getElementById('doc-modal-close');
-  const docModalDownload = document.getElementById('doc-modal-download');
-
-  function openDocModal(docUrl, title) {
-    if (!docModal || !docModalIframe) return;
-    docModalTitle.textContent = title;
-    docModalIframe.src = docUrl;
-    docModalDownload.href = docUrl;
-    docModalDownload.setAttribute('download', title);
-    docModal.classList.add('is-open');
-    document.body.style.overflow = 'hidden';
-    docModalClose.focus();
-  }
-
-  function closeDocModal() {
-    if (!docModal) return;
-    docModal.classList.remove('is-open');
-    if (docModalIframe) docModalIframe.src = '';
-    document.body.style.overflow = '';
-  }
-
-  // Global listeners for doc viewer buttons
-  const docViewBtns = document.querySelectorAll('[data-doc-view]');
-  docViewBtns.forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      e.preventDefault();
-      const url = btn.getAttribute('data-doc-view');
-      const title = btn.getAttribute('data-doc-title') || 'Document Preview';
-      openDocModal(url, title);
-    });
-  });
-
-  if (docModalClose) docModalClose.addEventListener('click', closeDocModal);
-  if (docModal) {
-    docModal.addEventListener('click', (e) => {
-      if (e.target === docModal) {
-        closeDocModal();
-      }
-    });
-  }
-
-  // Quick Preview Inline Toggles
-  const quickPreviewBtns = document.querySelectorAll('[data-quick-preview-target]');
-  quickPreviewBtns.forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      e.preventDefault();
-      const targetId = btn.getAttribute('data-quick-preview-target');
-      const embedWrapper = document.getElementById(targetId);
-      if (embedWrapper) {
-        const isOpen = embedWrapper.classList.toggle('is-open');
-        btn.textContent = isOpen ? 'Close Preview' : 'Quick Preview';
-      }
-    });
-  });
-
-  // ------------------------------------------------------------------------
-  // 6. Keyboard Accessibility (Escape, Left, Right)
-  // ------------------------------------------------------------------------
-  window.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') {
-      if (lightbox && lightbox.classList.contains('is-open')) {
-        closeLightbox();
-      }
-      if (docModal && docModal.classList.contains('is-open')) {
-        closeDocModal();
-      }
-      if (navMenu && navMenu.classList.contains('is-open')) {
-        navMenu.classList.remove('is-open');
-        mobileToggle.classList.remove('is-active');
-      }
-    } else if (lightbox && lightbox.classList.contains('is-open')) {
-      if (e.key === 'ArrowRight') showNextImage();
-      if (e.key === 'ArrowLeft') showPrevImage();
-    }
-  });
 });
