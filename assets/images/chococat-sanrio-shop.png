@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="referrer" content="no-referrer">
+<title>制限について｜サンリオオンラインショップ本店 - 公式通販サイト</title>
+<!--====================== meta ======================-->
+<meta name="Keywords" content="" />
+<meta name="Description" content="制限について｜サンリオオンラインショップ本店 - 公式通販サイト" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+
+<meta name="robots" content="noindex">
+
+<!-- Google Tag Manager --> 
+<script>
+(function (w, d) {
+	const hostname = w.location.hostname;
+	let gaId;
+	if (hostname === 'shop.sanrio.co.jp') {
+		gaId = 'G-NCE1W1ZJSD';
+	} else {
+		gaId = 'G-CNGNKZ7QY5';
+	}
+	w.gaId = gaId;
+	w.dataLayer = w.dataLayer || [];
+
+	w.gtag = function () {
+		w.dataLayer.push(arguments);
+	};
+
+	w.gtag('js', new Date());
+	w.gtag('config', gaId);
+
+	const script = d.createElement('script');
+		script.async = true;
+		script.src =
+		'https://www.googletagmanager.com/gtag/js?id=' +
+		encodeURIComponent(gaId);
+		d.head.appendChild(script);
+	})(window, document);
+</script>
+
+<style>
+.box_maintenance_wrap {
+	background:#fdf4f6;
+}
+.box_maintenance_wrap_img {
+	text-align: center;
+	padding:72px 0 64px 0;
+}
+
+.box_maintenance_txt{
+	margin-top: 10px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 16px;
+	color: #805939;
+	line-height: 1.8em;
+}
+
+#wrapperInner {
+	width: auto;
+}
+#simpleBlock02 #header #header_inner {
+	width: auto;
+}
+
+@media screen and (max-width:767px){
+	.box_maintenance_wrap_img{
+		padding:30px 0;
+	}
+	.box_maintenance_wrap_img img{
+		width: 103px;
+	}
+	.box_maintenance_txt{
+		width: 90%;
+		margin: 35px auto 0;
+		font-size: 14px;
+	}
+}
+</style>
+</head>
+<body>
+	<div id="simpleBlock02">
+		<div id="header">
+			<div id="header_inner">
+				<div class="logo" style="text-align: center;">
+					<img src="https://shop.sanrio.co.jp/assets/front/img/sanrio/error/header_logo.png" alt="サンリオ オフィシャル オンラインショップ" width="155">
+				</div>
+			</div>
+		</div>
+		<div id="wrapper">
+			<div id="wrapperContents">
+				<div class="box_maintenance_wrap">
+					<p class="box_maintenance_wrap_img">
+						<img src="https://shop.sanrio.co.jp/assets/front/img/sanrio/error/bowing.png" alt="">
+					</p>
+				</div>
+				<div id="wrapperInner" class="cmn_cl">
+					<div class="box_mid_conts">
+						<p class="box_maintenance_txt"><br>システムの仕様上、一時的に国外からの一部のアクセスを制限しております。<br>しばらく時間をおいてから、改めてアクセスいただきますようお願い申し上げます。<br>Ref ID：0.dcf11302.1795218326.87ee8822<br><br><br></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div class="deep_footer">
+				<footer class="l-footer">
+					<div class="l-footer__item l-footer__copyright">
+						<div style="text-align: center;">
+							<font size="1">
+								<span>
+									<small>&copy; 2026 SANRIO CO., LTD. 著作 株式会社サンリオ</small><br>
+									<small>このホームページに掲載のイラストおよびページレイアウト、文章の無断転載を禁じます。すべての著作権は株式会社サンリオに帰属します。</small>
+								</span>
+							</font>
+						</div>
+					</div>
+				</footer>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1635,3 +1635,167 @@ button {
     padding: 20px;
   }
 }
+
+/* --------------------------------------------------------------------------
+   16. Sanrio Japan Chococat Kawaii Stickers & Aesthetics
+   -------------------------------------------------------------------------- */
+.navbar__brand-title-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.navbar__brand-waving-cat {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+  animation: cuteWiggle 3s ease-in-out infinite;
+}
+
+@keyframes cuteWiggle {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-8deg); }
+  75% { transform: rotate(8deg); }
+}
+
+.status-mini-cat {
+  margin-left: 4px;
+  vertical-align: middle;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.hero-journal__friend-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid #E2E8F0;
+  padding: 4px 14px 4px 6px;
+  border-radius: var(--radius-full);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #334155;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+}
+
+.friend-mini-avatar {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+  border-radius: 50%;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.08));
+}
+
+.section-tag-cat {
+  margin-left: 6px;
+  vertical-align: middle;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.gallery-cat-guide {
+  position: absolute;
+  bottom: 14px;
+  right: 18px;
+  z-index: 5;
+  pointer-events: none;
+  filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.2));
+  transition: transform 0.3s ease;
+}
+
+.gallery-frame:hover .gallery-cat-guide {
+  transform: translateY(-8px) scale(1.08);
+}
+
+/* Bento Card Peeking Stickers */
+.bento-card__peeker {
+  position: absolute;
+  top: -16px;
+  right: 22px;
+  z-index: 10;
+  pointer-events: none;
+  filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.15));
+  transition: transform 0.4s var(--spring-curve);
+}
+
+.bento-card:hover .bento-card__peeker {
+  transform: translateY(-8px) scale(1.15) rotate(-4deg);
+}
+
+.folder-tab-friend {
+  margin-left: 6px;
+  vertical-align: middle;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.cinema-header-cat {
+  margin-right: 8px;
+  vertical-align: middle;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.2));
+}
+
+.chococat-character-callout__sub-friend {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+  flex-shrink: 0;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.12));
+}
+
+/* Footer Sanrio Parade */
+.footer__sanrio-parade {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 36px;
+  padding: 24px 28px;
+  background: linear-gradient(135deg, rgba(254, 242, 242, 0.6) 0%, rgba(240, 249, 255, 0.6) 100%);
+  border-radius: var(--radius-xl);
+  border: 2px dashed #FECDD3;
+  margin-bottom: 38px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.footer__parade-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #334155;
+  transition: transform 0.3s var(--spring-bouncy);
+}
+
+.footer__parade-item:hover {
+  transform: translateY(-8px) scale(1.12);
+}
+
+.parade-sticker {
+  object-fit: contain;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.12));
+}
+
+.footer__main-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 28px;
+  width: 100%;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #E2E8F0;
+}
+
+.footer__copyright-row {
+  text-align: center;
+  width: 100%;
+  padding-top: 18px;
+  font-size: 0.78rem;
+  color: #94A3B8;
+}
+
+.scroll-top-btn img {
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.15));
+}
